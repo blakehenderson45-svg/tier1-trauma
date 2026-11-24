@@ -1,0 +1,64 @@
+name: Tuesday Morning Dispatch & Deploy
+
+on:
+  schedule:
+    # Runs every Tuesday at 14:30 UTC (6:30 AM PST / 7:30 AM PDT)
+    # right after Monday Night Football & overnight stat corrections settle.
+    - cron: "30 14 * * 2"
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh weekly dispatch from Sleeper API
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python3 scripts/generate_dispatch.py
+
+      - name: Commit updated dispatch data if changed
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "Tier 1 Trauma Bot"
+          git config user.email "actions@users.noreply.github.com"
+          if ! git diff --quiet data/league-data.json data/players-cache.json; then
+            WEEK=$(python3 -c "import json; print(json.load(open('data/league-data.json'))['latest_week'])")
+            git add data/league-data.json data/players-cache.json
+            git commit -m "chore(dispatch): publish Week ${WEEK} Tuesday morning update"
+            git push
+          else
+            echo "No new dispatch data to commit."
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

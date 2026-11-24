@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tier 1 Trauma — Tier 1 FFL Weekly Dispatch &amp; Standings</title>
+  <meta
+    name="description"
+    content="Official public weekly dispatch, scoreboard triage, holiday-themed awards, standings, playoff picture, and Max PF draft tracker for Tier 1 FFL (Tier 1 Dynasty). Updated every Tuesday morning."
+  />
+  <meta property="og:title" content="Tier 1 Trauma — Weekly Dispatch" />
+  <meta
+    property="og:description"
+    content="Weekly Tuesday-morning fantasy football triage, holiday-themed recaps, standings, and Max PF draft order for all 12 managers in Tier 1 FFL."
+  />
+  <meta property="og:image" content="assets/hero-stadium.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sticky Top Navigation & Week Archive Switcher -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand" aria-label="Tier 1 Trauma Home">
+        <svg class="brand-mark" viewBox="0 0 36 22" fill="none" aria-hidden="true">
+          <path
+            d="M1 12H8.5L12 4L16.5 19L21 8L24.5 12H35"
+            stroke="#E53935"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <span class="brand-title">Tier 1 Trauma</span>
+          <span class="brand-sub" id="league-subtitle">Tier 1 Dynasty · 2026</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Section navigation">
+        <a href="#awards">Awards</a>
+        <a href="#scoreboard">Scoreboard</a>
+        <a href="#standings">Standings</a>
+        <a href="#postseason">Playoffs &amp; Draft</a>
+        <a href="#pulse">Team Pulse</a>
+      </nav>
+
+      <div class="topbar-controls">
+        <div class="week-switcher" role="group" aria-label="Week archive selector">
+          <button type="button" class="week-btn" id="prev-week-btn" aria-label="Previous week">&larr;</button>
+          <select id="week-select" class="week-select" aria-label="Select week"></select>
+          <button type="button" class="week-btn" id="next-week-btn" aria-label="Next week">&rarr;</button>
+        </div>
+        <div class="countdown-chip" title="Automated Tuesday morning dispatch via Sleeper API">
+          <span>Next Dispatch</span>
+          <strong id="next-dispatch-clock">--d --h</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Editorial Masthead -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-media">
+          <img
+            src="assets/hero-stadium.jpg"
+            alt="Battle-scarred football helmet and weathered leather football on rain-slicked turf under stadium floodlights"
+          />
+          <div class="hero-scrim">
+            <div class="edition-meta">
+              <span class="holiday-tag" id="hero-holiday-tag">Thanksgiving Edition</span>
+              <span id="hero-date-label">Week 11 · Nov 24, 2026</span>
+              <span>Tuesday Morning Dispatch</span>
+            </div>
+            <h1 class="hero-headline" id="hero-headline">Tier 1 Trauma</h1>
+            <p class="hero-deck" id="hero-deck">Loading latest Tier 1 Dynasty vitals...</p>
+          </div>
+        </div>
+
+        <hr class="hero-rule" />
+
+        <!-- Weekly Vitals Strip -->
+        <div class="vitals-grid" id="vitals-grid" aria-label="Weekly scoring vitals"></div>
+      </div>
+    </section>
+
+    <!-- Ward Report Narrative -->
+    <section class="ward-section">
+      <div class="container">
+        <div class="ward-grid">
+          <div class="ward-callout">
+            <div class="ward-big-num" id="ward-high-num">--</div>
+            <div class="ward-big-caption" id="ward-high-caption"></div>
+          </div>
+          <div class="ward-body">
+            <h2 id="ward-headline">Ward Report</h2>
+            <div id="ward-paragraphs"></div>
+            <div class="ward-tagline" id="ward-tagline"></div>
+          </div>
+        </div>
+
+        <div class="ekg-divider" aria-hidden="true">
+          <div class="ekg-line"></div>
+          <svg class="ekg-svg" viewBox="0 0 72 24" fill="none">
+            <path
+              d="M2 13H22L27 4L33 21L39 7L44 13H70"
+              stroke="#E53935"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="ekg-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Holiday-Themed Awards -->
+    <section class="section-block" id="awards">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="awards-heading">Weekly Triage Awards</h2>
+            <p class="section-subtitle" id="awards-sub">League-wide honors, heartbreaks, and bench malpractice.</p>
+          </div>
+        </div>
+        <div class="awards-grid" id="awards-grid"></div>
+      </div>
+    </section>
+
+    <!-- Scoreboard & Matchup Triage -->
+    <section class="section-block" id="scoreboard">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="scoreboard-heading">Scoreboard &amp; Matchup Triage</h2>
+            <p class="section-subtitle">
+              Sorted from highest winning total to ugliest trench fight. Click any matchup to inspect top starters &amp; bench regrets.
+            </p>
+          </div>
+        </div>
+        <div class="matchups-grid" id="matchups-grid"></div>
+      </div>
+    </section>
+
+    <!-- Scoring Distribution Chart -->
+    <section class="section-block" id="distribution">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="dist-heading">Scoring Distribution</h2>
+            <p class="section-subtitle" id="dist-sub">All 12 teams ranked by weekly output against the league mean and median.</p>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-legend">
+            <span class="legend-item"><span class="legend-swatch win"></span>Week Winner</span>
+            <span class="legend-item"><span class="legend-swatch loss"></span>Week Loss</span>
+            <span class="legend-item"><span class="legend-swatch mean"></span><span id="legend-mean-text">League Mean</span></span>
+          </div>
+          <div class="bars-wrap" id="scoring-bars"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Standings & All-Play Matrix -->
+    <section class="section-block" id="standings">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="standings-heading">Standings &amp; All-Play Matrix</h2>
+            <p class="section-subtitle">
+              Click any column header to sort. Dashed line marks the 6-team playoff cut. All-Play shows each roster's record if they faced all 11 leaguemates every week.
+            </p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table" id="standings-table">
+            <thead>
+              <tr>
+                <th class="sortable" data-sort="rank">Rank</th>
+                <th class="sortable" data-sort="team_name">Team</th>
+                <th>Manager</th>
+                <th class="sortable num" data-sort="wins">Record</th>
+                <th class="sortable num" data-sort="pf">PF</th>
+                <th class="sortable num" data-sort="max_pf">Max PF</th>
+                <th class="sortable num" data-sort="pa">PA</th>
+                <th class="sortable num" data-sort="all_play_pct">All-Play</th>
+              </tr>
+            </thead>
+            <tbody id="standings-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playoff Picture & Anti-Tanking Max PF Draft Order -->
+    <section class="section-block" id="postseason">
+      <div class="container">
+        <div class="dual-grid">
+          <div>
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">Playoff Seedings</h2>
+                <p class="section-subtitle" id="playoff-sub">Top 6 qualify for Week 15 (Seeds 1 &amp; 2 earn first-round byes).</p>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Seed</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                    <th class="num">Rec</th>
+                    <th class="num">PF</th>
+                  </tr>
+                </thead>
+                <tbody id="playoff-body"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-header">
+              <div>
+                <h2 class="section-title">Projected Draft Order</h2>
+                <p class="section-subtitle">Anti-tanking Max PF order for non-playoff teams (1.01–1.06); reverse seed for 1.07–1.12.</p>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Pick</th>
+                    <th>Team</th>
+                    <th>Basis</th>
+                    <th class="num">Max PF</th>
+                  </tr>
+                </thead>
+                <tbody id="draft-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Team Pulse Explorer (Opt-In for Any Leaguemate) -->
+    <section class="section-block" id="pulse">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Season Team Pulse</h2>
+            <p class="section-subtitle">Select any franchise in Tier 1 FFL to inspect their week-by-week scoring curve, efficiency, and season highs.</p>
+          </div>
+        </div>
+        <div class="pulse-shell">
+          <div class="team-pills" id="team-pills" role="tablist" aria-label="Select a team"></div>
+          <div class="pulse-detail" id="pulse-detail"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Tier 1 Trauma</strong> · Public League Dispatch for all 12 managers in <span id="footer-league-name">Tier 1 Dynasty</span>.
+        Auto-updated every Tuesday morning via the Sleeper API.
+      </div>
+      <div class="footer-links">
+        <a id="sleeper-link" href="https://sleeper.com" target="_blank" rel="noopener">Sleeper League</a>
+        <a id="ffwrapped-link" href="https://ffwrapped.com" target="_blank" rel="noopener">FFWrapped Report</a>
+        <span id="last-updated-label">Updated --</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
