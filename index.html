@@ -49,6 +49,7 @@
         <a href="#scoreboard">Scoreboard</a>
         <a href="#standings">Standings</a>
         <a href="#postseason">Playoffs &amp; Draft</a>
+        <a href="#preview">Next Week</a>
         <a href="#pulse">Team Pulse</a>
       </nav>
 
@@ -58,6 +59,9 @@
           <select id="week-select" class="week-select" aria-label="Select week"></select>
           <button type="button" class="week-btn" id="next-week-btn" aria-label="Next week">&rarr;</button>
         </div>
+        <button type="button" class="copy-blurb-btn" id="copy-blurb-btn" title="Copy a ready-to-paste Tuesday morning recap for Sleeper or group text">
+          Copy Chat Blurb
+        </button>
         <div class="countdown-chip" title="Automated Tuesday morning dispatch via Sleeper API">
           <span>Next Dispatch</span>
           <strong id="next-dispatch-clock">--d --h</strong>
@@ -107,6 +111,8 @@
             <div class="ward-tagline" id="ward-tagline"></div>
           </div>
         </div>
+
+        <div class="fraud-strip" id="fraud-strip" aria-label="Fraud watch and schedule luck"></div>
 
         <div class="ekg-divider" aria-hidden="true">
           <div class="ekg-line"></div>
@@ -252,6 +258,19 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Triage Slate (Next Week Preview) -->
+    <section class="section-block" id="preview">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="preview-heading">Upcoming Triage Slate</h2>
+            <p class="section-subtitle" id="preview-sub">Live next-week matchups pulled from Sleeper with playoff stakes and form favorites.</p>
+          </div>
+        </div>
+        <div class="preview-grid" id="preview-grid"></div>
       </div>
     </section>
 

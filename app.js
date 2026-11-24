@@ -83,8 +83,27 @@
     nextBtn.disabled = state.selectedWeek >= maxW;
   }
 
+  function motifSvg(motif) {
+    const paths = {
+      wheat: '<path d="M12 21V3M12 7c-2.5-1.5-4-1-4-1s-.5 2 2 3.5M12 7c2.5-1.5 4-1 4-1s.5 2-2 3.5M12 12c-2.5-1.5-4-1-4-1s-.5 2 2 3.5M12 12c2.5-1.5 4-1 4-1s.5 2-2 3.5"/>',
+      pumpkin: '<path d="M12 5c-4.5 0-8 2.8-8 7s3.5 7 8 7 8-2.8 8-7-3.5-7-8-7Z"/><path d="M12 5V2.5M12 5c-2 2-2 12 0 14M12 5c2 2 2 12 0 14"/>',
+      snowflake: '<path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07L19.07 4.93"/>',
+      tree: '<path d="M12 3l-6 7h3l-4 6h14l-4-6h3l-6-7zM12 16v5"/>',
+      tag: '<path d="M12.5 3H5v7.5l8.5 8.5L21 11.5 12.5 3z"/><circle cx="8.5" cy="8.5" r="1.2"/>',
+      spark: '<path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z"/>',
+      moon: '<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>',
+      leaf: '<path d="M19 5c-7 0-12 4-13 13 9-1 13-6 13-13zM6 18l7-7"/>',
+      star: '<path d="M12 2l2.9 6.2L22 9.2l-5 4.8 1.2 7L12 17.6 5.8 21 7 14 2 9.2l7.1-1L12 2z"/>',
+      flame: '<path d="M12 2c2.5 3.5 6 6.5 6 11a6 6 0 1 1-12 0c0-2.8 1.6-5.4 3.5-7.2 0 1.8.8 3 2 3.5C11.2 6.8 11.5 4.2 12 2z"/>',
+      skull: '<circle cx="12" cy="10" r="7"/><path d="M9 17v3h6v-3M9.5 10h.01M14.5 10h.01"/>',
+      clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    };
+    const inner = paths[motif] || '<path d="M2 12h4l2.5-6 3.5 12 2.5-6H22"/>';
+    return `<svg class="holiday-motif-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
+  }
+
   function renderHeroAndWard(weekObj) {
-    document.getElementById("hero-holiday-tag").textContent = `${weekObj.theme.holiday} Edition`;
+    document.getElementById("hero-holiday-tag").innerHTML = `${motifSvg(weekObj.theme.motif)}${escapeHtml(weekObj.theme.holiday)} Edition`;
     document.getElementById("hero-date-label").textContent = `Week ${weekObj.week} · ${weekObj.dispatch_date}`;
     document.getElementById("hero-headline").textContent = weekObj.headline;
     document.getElementById("hero-deck").textContent = weekObj.deck;
@@ -122,6 +141,22 @@
       .map((p) => `<p>${escapeHtml(p)}</p>`)
       .join("");
     document.getElementById("ward-tagline").textContent = `// ${weekObj.theme.tagline}`;
+
+    const fraudEl = document.getElementById("fraud-strip");
+    if (fraudEl && weekObj.fraud_watch) {
+      const f = weekObj.fraud_watch.fraud;
+      const v = weekObj.fraud_watch.victim;
+      fraudEl.innerHTML = `
+        <div class="fraud-card">
+          <div class="fraud-kicker">Fraud Watch · Paper Tiger (+${fmt(f.luck_delta, 1)}% Luck)</div>
+          <p class="fraud-text">${escapeHtml(f.roast)}</p>
+        </div>
+        <div class="fraud-card victim">
+          <div class="fraud-kicker">Schedule Victim · Unluckiest Roster (${fmt(v.luck_delta, 1)}% Luck)</div>
+          <p class="fraud-text">${escapeHtml(v.roast)}</p>
+        </div>
+      `;
+    }
   }
 
   function renderAwards(weekObj) {
@@ -473,6 +508,55 @@
     setInterval(tick, 60000);
   }
 
+  function renderUpcomingPreview() {
+    const section = document.getElementById("preview");
+    const up = state.data.upcoming;
+    if (!section || !up || !up.matchups || !up.matchups.length) {
+      if (section) section.style.display = "none";
+      return;
+    }
+
+    document.getElementById("preview-heading").textContent =
+      `Week ${up.week} Preview · ${up.theme.edition}`;
+    document.getElementById("preview-sub").textContent =
+      `Upcoming ${up.theme.holiday} matchups pulled live from Sleeper with playoff stakes and recent-form favorites.`;
+
+    const grid = document.getElementById("preview-grid");
+    grid.innerHTML = up.matchups
+      .map((m) => {
+        let stakeCls = "";
+        if (m.stake.includes("Playoff")) stakeCls = "clash";
+        else if (m.stake.includes("Bubble") || m.stake.includes("Trap")) stakeCls = "bubble";
+
+        return `
+          <article class="preview-card">
+            <div class="preview-top">
+              <span class="stake-tag ${stakeCls}">${escapeHtml(m.stake)}</span>
+              <span class="preview-fav">Lean: ${escapeHtml(m.favorite)} (+${fmt(m.edge, 1)})</span>
+            </div>
+            <div class="preview-matchup">
+              <div class="preview-team">
+                <div class="preview-team-left">
+                  ${avatarHtml(m.team_a.team_name, m.team_a.avatar)}
+                  <span class="preview-team-name">#${m.team_a.rank} ${escapeHtml(m.team_a.team_name)} <span class="matchup-rec">(${escapeHtml(m.team_a.record)})</span></span>
+                </div>
+                <span class="preview-team-avg">${fmt(m.team_a.avg, 1)} ppg</span>
+              </div>
+              <div class="preview-team">
+                <div class="preview-team-left">
+                  ${avatarHtml(m.team_b.team_name, m.team_b.avatar)}
+                  <span class="preview-team-name">#${m.team_b.rank} ${escapeHtml(m.team_b.team_name)} <span class="matchup-rec">(${escapeHtml(m.team_b.record)})</span></span>
+                </div>
+                <span class="preview-team-avg">${fmt(m.team_b.avg, 1)} ppg</span>
+              </div>
+            </div>
+            <p class="preview-blurb">${escapeHtml(m.blurb)}</p>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
   function bindEvents() {
     document.getElementById("week-select").addEventListener("change", (e) => {
       state.selectedWeek = Number(e.target.value);
@@ -494,6 +578,32 @@
         renderCurrentWeek();
       }
     });
+
+    const copyBtn = document.getElementById("copy-blurb-btn");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", async () => {
+        const weekObj = getWeekObj(state.selectedWeek);
+        const text = weekObj.chat_blurb || `${weekObj.headline} — ${window.location.href}`;
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch {
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand("copy");
+          document.body.removeChild(ta);
+        }
+        copyBtn.textContent = "Copied to Clipboard!";
+        copyBtn.classList.add("copied");
+        setTimeout(() => {
+          copyBtn.textContent = "Copy Chat Blurb";
+          copyBtn.classList.remove("copied");
+        }, 2200);
+      });
+    }
 
     document.querySelectorAll("#standings-table th.sortable").forEach((th) => {
       th.addEventListener("click", () => {
@@ -532,6 +642,7 @@
 
       bindEvents();
       renderCurrentWeek();
+      renderUpcomingPreview();
       renderTeamPulse();
       startCountdown(state.data.next_dispatch_at);
     } catch (err) {

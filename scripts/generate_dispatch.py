@@ -3,7 +3,7 @@
 Tier 1 Trauma — Automated Weekly Dispatch Generator
 Fetches live league data from the public Sleeper API for Tier 1 Dynasty
 and builds data/league-data.json with unbiased, league-wide, holiday-themed
-weekly dispatches for all 12 leaguemates.
+weekly dispatches, ruthless league-chat roasts, and next-week previews.
 """
 
 from __future__ import annotations
@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any
 
 LEAGUE_ID = os.environ.get("SLEEPER_LEAGUE_ID", "1398719645564796928")
+SITE_URL = "https://blakehenderson45-svg.github.io/tier1-trauma/"
 SLEEPER_BASE = "https://api.sleeper.app/v1"
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
@@ -26,35 +27,35 @@ OUTPUT_FILE = DATA_DIR / "league-data.json"
 
 
 # Holiday & Seasonal Theme Mixups keyed by NFL regular/postseason week number.
-# Each week pairs the signature Tier 1 Trauma medical/gridiron motif with a
-# timely holiday or calendar mixup so every Tuesday dispatch feels fresh.
 WEEK_THEMES: dict[int, dict[str, Any]] = {
     1: {
         "id": "labor-day",
+        "motif": "briefcase",
         "holiday": "Labor Day",
         "edition": "Labor Day Intake",
         "accent": "#3B82F6",
         "accent_soft": "rgba(59, 130, 246, 0.16)",
-        "tagline": "No days off in the Tier 1 Trauma ward — Opening Week vitals are in.",
+        "tagline": "No days off in the Tier 1 Trauma ward — Opening Week vitals are in, and several rosters already need FMLA.",
         "awards": {
             "high": ("Employee of the Week", "Clocked the heaviest shift of Opening Week."),
-            "low": ("Called In Sick", "No-showed the Labor Day shift."),
-            "close": ("Overtime Shift", "Narrowest margin of the opener."),
-            "upset": ("Union Walkout", "Biggest opening-week statement."),
-            "bench": ("Left on Break", "Highest-scoring starter left sitting on the bench."),
+            "low": ("No-Call, No-Show", "Flatlined on the very first shift of the season."),
+            "close": ("Overtime Robbery", "Narrowest escape of the opener."),
+            "upset": ("Union Walkout", "Biggest opening-week ambush."),
+            "bench": ("Left on Smoke Break", "Highest-scoring star left rotting on the bench."),
         },
-        "verbs": ("clocked", "steamrolled", "handled"),
+        "verbs": ("clocked out", "steamrolled", "robbed"),
     },
     2: {
         "id": "harvest-moon",
+        "motif": "moon",
         "holiday": "Harvest Moon",
         "edition": "Harvest Moon Triage",
         "accent": "#D97706",
         "accent_soft": "rgba(217, 119, 6, 0.16)",
-        "tagline": "Full moon over the trauma ward — weird bounce-backs and early panic.",
+        "tagline": "Full moon over the trauma ward — fraudulent Week 1 hype just collided with reality.",
         "awards": {
             "high": ("Apex Howler", "Lit up the Week 2 scoreboard under the Harvest Moon."),
-            "low": ("Lunar Eclipse", "Completely vanished under the floodlights."),
+            "low": ("Total Eclipse", "Completely vanished under the stadium lights."),
             "close": ("Silver Bullet Escape", "Survived the tightest finish of the week."),
             "upset": ("Full Moon Madness", "Biggest shockwave of Week 2."),
             "bench": ("Left in the Dark", "Biggest point explosion stranded on the pine."),
@@ -63,46 +64,49 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
     },
     3: {
         "id": "equinox",
+        "motif": "leaf",
         "holiday": "Autumn Equinox",
         "edition": "Equinox Flatline",
         "accent": "#C26D2D",
         "accent_soft": "rgba(194, 109, 45, 0.16)",
-        "tagline": "Equal day, equal night — wildly unequal fantasy point totals.",
+        "tagline": "Equal day, equal night — violently unequal fantasy rosters.",
         "awards": {
-            "high": ("Peak Season", "Hottest lineup as fall officially arrived."),
-            "low": ("Early Frost", "Lineup went ice cold on the first day of autumn."),
+            "high": ("Peak Harvest", "Hottest lineup as fall officially arrived."),
+            "low": ("Early Frostbite", "Lineup went stone-cold dead on day one of autumn."),
             "close": ("Razor Balance", "Decided by the slimmest margin of the equinox."),
-            "upset": ("Seasonal Shift", "Flipped the early standings upside down."),
-            "bench": ("Fallen Leaves", "Left a pile of points raked onto the bench."),
+            "upset": ("Seasonal Ambush", "Flipped the early standings upside down."),
+            "bench": ("Raked to the Curb", "Left a pile of points decomposing on the bench."),
         },
         "verbs": ("froze out", "flattened", "edged"),
     },
     4: {
         "id": "oktoberfest",
+        "motif": "stein",
         "holiday": "Oktoberfest",
         "edition": "Oktoberfest Trauma Ward",
         "accent": "#CA8A04",
         "accent_soft": "rgba(202, 138, 4, 0.16)",
-        "tagline": "Steins raised, lineups toasted, and a few managers nursing heavy hangovers.",
+        "tagline": "Steins raised, frauds exposed, and half the league waking up with a lineup hangover.",
         "awards": {
-            "high": ("King of the Beer Hall", "Poured the biggest point total of Week 4."),
-            "low": ("Flat Keg", "Nothing left on tap in Week 4."),
-            "close": ("Last Call Escape", "Snuck out a win right before closing time."),
+            "high": ("King of the Beer Hall", "Poured the heaviest point total of Week 4."),
+            "low": ("Warm Flat Keg", "Nothing left on tap in Week 4."),
+            "close": ("Last Call Robbery", "Stumbled out with a W right before closing time."),
             "upset": ("Bavarian Ambush", "Spilled a contender's stein in broad daylight."),
-            "bench": ("Untapped Reserve", "Best performer left sitting in the cellar."),
+            "bench": ("Locked in the Cellar", "Best performer left sitting untouched on the bench."),
         },
         "verbs": ("toasted", "crushed", "outlasted"),
     },
     5: {
         "id": "indigenous-peoples",
+        "motif": "compass",
         "holiday": "October Long Weekend",
         "edition": "October Triage Expedition",
         "accent": "#B45309",
         "accent_soft": "rgba(180, 83, 9, 0.16)",
-        "tagline": "Uncharted territory as bye weeks begin and contender tiers separate.",
+        "tagline": "Bye weeks have arrived — and so have the first shameless roster excuses.",
         "awards": {
             "high": ("Trailblazer", "Charted the highest score of Week 5."),
-            "low": ("Lost at Sea", "Drifted well below the league pulse."),
+            "low": ("Lost at Sea", "Drifted miles below the league pulse."),
             "close": ("Photo Finish", "Tightest survival of the long weekend."),
             "upset": ("Mutiny on Deck", "Biggest standings shaker of Week 5."),
             "bench": ("Stranded Cargo", "Biggest star left behind on the bench."),
@@ -111,29 +115,31 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
     },
     6: {
         "id": "midseason-checkup",
+        "motif": "heart",
         "holiday": "Sweetest Day & Midseason",
         "edition": "Midseason Autopsy",
         "accent": "#E11D48",
         "accent_soft": "rgba(225, 29, 72, 0.16)",
-        "tagline": "Six weeks in: no more small-sample excuses in the Tier 1 ward.",
+        "tagline": "Six weeks in: time to stop calling it 'bad luck' and admit the roster is on life support.",
         "awards": {
-            "high": ("Sweetest Victory", "Delivered the cleanest clinical beatdown of Week 6."),
-            "low": ("Bitter Pill", "Hardest Week 6 score to swallow."),
+            "high": ("Sweetest Execution", "Delivered the cleanest clinical beatdown of Week 6."),
+            "low": ("Bitter Cyanide", "Hardest Week 6 box score to look at in public."),
             "close": ("Heartbeat Away", "Barely kept a pulse to steal the W."),
-            "upset": ("Heartbreaker", "Pulled off the cruelest upset of Week 6."),
+            "upset": ("Cold-Blooded Heartbreaker", "Pulled off the cruelest upset of Week 6."),
             "bench": ("Left Unopened", "Sweetest stat line wasted on the bench."),
         },
         "verbs": ("dissected", "overwhelmed", "survived"),
     },
     7: {
         "id": "haunted-ward",
+        "motif": "skull",
         "holiday": "Spooky Season",
         "edition": "Haunted Ward Intake",
         "accent": "#EA580C",
         "accent_soft": "rgba(234, 88, 12, 0.16)",
-        "tagline": "Ghostly projections and nightmare matchups as Halloween approaches.",
+        "tagline": "Ghostly projections, zombie benches, and nightmare matchups creeping into Halloween.",
         "awards": {
-            "high": ("Apex Predator", "Terrorized the league scoreboard in Week 7."),
+            "high": ("Apex Slasher", "Terrorized the league scoreboard in Week 7."),
             "low": ("Ghost Town", "Lineup pulled a full disappearing act."),
             "close": ("Final Girl Survival", "Escaped Week 7 by the skin of their teeth."),
             "upset": ("Jump Scare", "Ambushed a higher seed out of nowhere."),
@@ -143,46 +149,49 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
     },
     8: {
         "id": "halloween",
+        "motif": "pumpkin",
         "holiday": "Halloween",
         "edition": "Halloween Bloodbath",
         "accent": "#F97316",
         "accent_soft": "rgba(249, 115, 22, 0.16)",
-        "tagline": "All tricks, no treats — a full Code Red horror show across Tier 1.",
+        "tagline": "All tricks, zero mercy — a full Code Red horror show across the Tier 1 ward.",
         "awards": {
             "high": ("Full-Size Candy Bar", "Handed out the scariest point total of Halloween week."),
             "low": ("Bag of Rocks", "Pure nightmare fuel at the bottom of the scoreboard."),
             "close": ("Midnight Escape", "Survived the closest thriller of the night."),
-            "upset": ("Poltergeist Upset", "Knocked off a contender in the dark."),
+            "upset": ("Poltergeist Upset", "Knocked off a contender in pitch darkness."),
             "bench": ("Skeleton on the Bench", "Left a monster stat line locked in the closet."),
         },
-        "verbs": ("carved up", "terrified", "survived"),
+        "verbs": ("slashed through", "terrified", "survived"),
     },
     9: {
         "id": "daylight-saving",
+        "motif": "clock",
         "holiday": "Daylight Saving & Election Week",
         "edition": "Fall Back Flatline",
         "accent": "#0EA5E9",
         "accent_soft": "rgba(14, 165, 233, 0.16)",
-        "tagline": "Clocks fell back an hour, and several playoff hopes fell back a full game.",
+        "tagline": "Clocks fell back an hour, and several pretenders fell right out of the playoff picture.",
         "awards": {
             "high": ("Landslide Victory", "Ran away with the Week 9 popular vote."),
-            "low": ("Recount Required", "Lineup never even showed up to the polls."),
+            "low": ("Recount Required", "Lineup forgot to show up to the polls."),
             "close": ("Too Close to Call", "Needed every decimal point to survive."),
-            "upset": ("Polling Error", "Defied the standings to snatch a huge W."),
+            "upset": ("Polling Disaster", "Defied the standings to snatch a massive W."),
             "bench": ("Unclaimed Ballot", "Game-changing points left sitting on the bench."),
         },
         "verbs": ("swept", "outvoted", "edged"),
     },
     10: {
         "id": "veterans-day",
+        "motif": "star",
         "holiday": "Veterans Day Week",
         "edition": "Week 10 Bloodbath",
         "accent": "#DC2626",
         "accent_soft": "rgba(220, 38, 38, 0.16)",
-        "tagline": "Heavy artillery at the top of the table as the playoff stretch begins.",
+        "tagline": "Heavy artillery at the top of the table as the playoff stretch turns ruthless.",
         "awards": {
             "high": ("Top Trauma Unit", "Unleashed the heaviest barrage of Week 10."),
-            "low": ("Flatline Watch", "Lowest vital signs across the entire ward."),
+            "low": ("DOA Watch", "Lowest vital signs across the entire ward."),
             "close": ("Trench Survival", "Ground out the tightest margin of the week."),
             "upset": ("Ambush of the Week", "Stunned a higher-seeded heavyweight."),
             "bench": ("Reserve Artillery", "Left maximum firepower unused on the bench."),
@@ -191,43 +200,46 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
     },
     11: {
         "id": "thanksgiving",
+        "motif": "wheat",
         "holiday": "Thanksgiving",
         "edition": "Thanksgiving Carving",
         "accent": "#D9822B",
         "accent_soft": "rgba(217, 130, 43, 0.16)",
-        "tagline": "Carving knives out before the turkey hits the table — the playoff moat is set.",
+        "tagline": "Carving knives out before the turkey even thaws — contenders eat, pretenders get relegated to the kids' table.",
         "awards": {
             "high": ("Head of the Table", "Carved up the league for the biggest feast of Week 11."),
-            "low": ("Stuffed & Cold", "Leftover-grade scoring at the bottom of the ward."),
+            "low": ("Cold Leftovers", "Dry, unseasoned scoring at the bottom of the ward."),
             "close": ("Turkey Steal", "Snatched the narrowest escape right off the platter."),
-            "upset": ("Kids' Table Ambush", "Crashed the grown-ups' table for a massive upset."),
-            "bench": ("Left in the Oven", "Cooked up huge points — and forgot to serve them."),
+            "upset": ("Kids' Table Ambush", "Crashed the grown-ups' table for a shameless upset."),
+            "bench": ("Burned in the Oven", "Cooked up huge points — and forgot to serve them."),
         },
         "verbs": ("carved up", "stuffed", "snatched a win from"),
     },
     12: {
         "id": "black-friday",
+        "motif": "tag",
         "holiday": "Black Friday & Cyber Monday",
         "edition": "Black Friday Clearance",
         "accent": "#EAB308",
         "accent_soft": "rgba(234, 179, 8, 0.16)",
-        "tagline": "Doorbuster blowouts and discounted playoff dreams two weeks from the bracket.",
+        "tagline": "Doorbuster blowouts and 90%-off playoff dreams with two weeks left before the bracket locks.",
         "awards": {
             "high": ("Doorbuster Special", "Dropped the loudest point total of Black Friday week."),
-            "low": ("Out of Stock", "Shelves completely bare when it mattered most."),
+            "low": ("Clearance Bin", "Shelves completely bare when it mattered most."),
             "close": ("Checkout Line Steal", "Snuck out the tightest win at the register."),
-            "upset": ("Clearance Ambush", "Discounted a playoff contender in prime time."),
-            "bench": ("Left in the Cart", "Monster scorer left unpurchased on the bench."),
+            "upset": ("Markdown Ambush", "Discounted a playoff contender in broad daylight."),
+            "bench": ("Abandoned in Cart", "Monster scorer left unpurchased on the bench."),
         },
         "verbs": ("marked down", "cleaned out", "outbid"),
     },
     13: {
         "id": "december-kickoff",
+        "motif": "snowflake",
         "holiday": "Giving Tuesday & December Freeze",
         "edition": "December Code Blue",
         "accent": "#38BDF8",
         "accent_soft": "rgba(56, 189, 248, 0.16)",
-        "tagline": "Winter arrives in Tier 1 — penultimate regular-season triage before brackets lock.",
+        "tagline": "Winter hits Tier 1 — penultimate regular-season triage where frauds finally freeze over.",
         "awards": {
             "high": ("Blizzard Warning", "Buried the competition under a mountain of points."),
             "low": ("Hypothermia Watch", "Vital signs plummeted in the December cold."),
@@ -239,22 +251,24 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
     },
     14: {
         "id": "final-triage",
+        "motif": "siren",
         "holiday": "Regular Season Finale",
         "edition": "Final Triage & Cut-Line Judgment",
         "accent": "#EF4444",
         "accent_soft": "rgba(239, 68, 68, 0.16)",
-        "tagline": "Last call for the Week 15 bracket — six survive, six head to the Max PF lottery.",
+        "tagline": "Last call for the Week 15 bracket — six advance, six get wheeled straight to the Max PF lottery.",
         "awards": {
             "high": ("Final Boss", "Closed the regular season with a statement eruption."),
             "low": ("DOA at the Cutoff", "Limped across the regular-season finish line."),
             "close": ("Buzzer-Beater Pulse", "Kept the heartbeat alive by a fraction."),
-            "upset": ("Spoiler Alert", "Played ultimate spoiler on Finale Sunday."),
+            "upset": ("Ultimate Spoiler", "Ruined someone's entire season on Finale Sunday."),
             "bench": ("Regret of the Season", "Biggest Week 14 explosion stranded on the bench."),
         },
         "verbs": ("dispatched", "eliminated", "edged"),
     },
     15: {
         "id": "holiday-playoffs",
+        "motif": "flame",
         "holiday": "Hanukkah & Playoff Opening",
         "edition": "Holiday Playoff Intake",
         "accent": "#3B82F6",
@@ -262,7 +276,7 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
         "tagline": "Win or go to the morgue — Tier 1 postseason triage is officially live.",
         "awards": {
             "high": ("Festival of Points", "Lit up Round 1 with the brightest scoreboard."),
-            "low": ("First-Round Flatline", "Postseason pulse faded early."),
+            "low": ("First-Round Flatline", "Postseason pulse died on arrival."),
             "close": ("Miracle Survival", "Escaped elimination by the tightest margin."),
             "upset": ("Bracket Buster", "Shook up the playoff tree in Round 1."),
             "bench": ("Unlit Candle", "Massive stat line left on the sideline."),
@@ -271,14 +285,15 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
     },
     16: {
         "id": "christmas",
+        "motif": "tree",
         "holiday": "Christmas",
         "edition": "Christmas Trauma Ward",
         "accent": "#22C55E",
         "accent_soft": "rgba(34, 197, 94, 0.16)",
         "tagline": "Semifinal carnage under the mistletoe — nice-list blowouts and coal-filled stockings.",
         "awards": {
-            "high": ("Top of the Nice List", "Delivered a gift-wrapped semifinal explosion."),
-            "low": ("Lump of Coal", "Nothing but coal in the Week 16 box score."),
+            "high": ("Top of the Nice List", "Delivered a gift-wrapped semifinal execution."),
+            "low": ("Stocking Full of Coal", "Nothing but coal in the Week 16 box score."),
             "close": ("Miracle on Trauma Street", "Pulled off a holiday-miracle finish."),
             "upset": ("Grinch Steal", "Stole a championship ticket right out of the sleigh."),
             "bench": ("Unwrapped Gift", "Best player left sitting under the tree."),
@@ -287,6 +302,7 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
     },
     17: {
         "id": "new-years",
+        "motif": "spark",
         "holiday": "New Year's",
         "edition": "New Year's Championship Flatline",
         "accent": "#EAB308",
@@ -294,7 +310,7 @@ WEEK_THEMES: dict[int, dict[str, Any]] = {
         "tagline": "Pop the champagne or call time of death — a Tier 1 Dynasty champion is crowned.",
         "awards": {
             "high": ("Champagne Toast", "Capped the season with the loudest Week 17 score."),
-            "low": ("Midnight Hangover", "Rough way to ring in the offseason."),
+            "low": ("Midnight Hangover", "Brutal way to ring in the offseason."),
             "close": ("Ball-Drop Finish", "Decided at the stroke of midnight."),
             "upset": ("New Year's Shock", "Closed the year with an unforgettable stunner."),
             "bench": ("Left in Last Year", "Huge performance left behind on the bench."),
@@ -308,7 +324,7 @@ def fetch_json(url: str, timeout: int = 25) -> Any:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "Tier1Trauma-DispatchBot/1.0 (+https://github.com/blakehenderson45-svg/tier1-trauma)"
+            "User-Agent": "Tier1Trauma-DispatchBot/1.1 (+https://github.com/blakehenderson45-svg/tier1-trauma)"
         },
     )
     with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -316,7 +332,6 @@ def fetch_json(url: str, timeout: int = 25) -> Any:
 
 
 def load_or_fetch_players(needed_ids: set[str]) -> dict[str, dict[str, str]]:
-    """Fetch NFL player directory from Sleeper and persist only rostered players."""
     cached: dict[str, dict[str, str]] = {}
     if PLAYERS_CACHE.exists():
         try:
@@ -354,11 +369,16 @@ def round2(val: float) -> float:
     return round(float(val), 2)
 
 
+def pick(pool: list[str], seed: int) -> str:
+    return pool[seed % len(pool)]
+
+
 def get_theme(week: int) -> dict[str, Any]:
     if week in WEEK_THEMES:
         return WEEK_THEMES[week]
     return {
         "id": f"week-{week}",
+        "motif": "pulse",
         "holiday": f"Week {week}",
         "edition": f"Week {week} Triage",
         "accent": "#E53935",
@@ -376,11 +396,7 @@ def get_theme(week: int) -> dict[str, Any]:
 
 
 def dispatch_date_for_week(season: int, week: int) -> str:
-    """Compute the Tuesday morning dispatch date for a given NFL season & week."""
-    # NFL 2026 Week 1 Tuesday after MNF is Sept 15, 2026.
-    # More generally, find the first Thursday of September + 12 days = Week 1 Tuesday.
     sept1 = dt.date(season, 9, 1)
-    # Find first Monday (Labor Day) -> Week 1 kicks off Thursday after Labor Day -> MNF is 7 days after Labor Day -> Dispatch Tuesday is 8 days after Labor Day.
     days_to_monday = (0 - sept1.weekday()) % 7
     labor_day = sept1 + dt.timedelta(days=days_to_monday)
     week1_tuesday = labor_day + dt.timedelta(days=8)
@@ -389,9 +405,8 @@ def dispatch_date_for_week(season: int, week: int) -> str:
 
 
 def next_tuesday_iso() -> str:
-    """Return ISO timestamp for next Tuesday at 06:30 AM America/Los_Angeles (14:30 UTC)."""
     now = dt.datetime.now(dt.timezone.utc)
-    days_ahead = (1 - now.weekday()) % 7  # 1 = Tuesday
+    days_ahead = (1 - now.weekday()) % 7
     candidate = now.replace(hour=14, minute=30, second=0, microsecond=0) + dt.timedelta(days=days_ahead)
     if candidate <= now:
         candidate += dt.timedelta(days=7)
@@ -402,6 +417,226 @@ def format_streak(streak_type: str, count: int) -> str:
     if not streak_type or count <= 0:
         return "-"
     return f"{streak_type}{count}"
+
+
+def build_roast_note(
+    week: int,
+    mid: int,
+    theme: dict[str, Any],
+    w_name: str,
+    l_name: str,
+    win_pts: float,
+    lose_pts: float,
+    margin: float,
+    combined: float,
+    mean_score: float,
+    w_mvp: dict[str, Any] | None,
+    l_mvp: dict[str, Any] | None,
+    l_top_bench: dict[str, Any] | None,
+    w_wins: int,
+    w_losses: int,
+    l_wins: int,
+    l_losses: int,
+) -> str:
+    """Generate ruthless, unbiased, holiday-aware league-chat roast for a matchup."""
+    seed = week * 17 + mid * 7
+    verb_big, verb_mid, verb_close = theme["verbs"]
+    w_mvp_txt = f"{w_mvp['name']} ({w_mvp['points']:.1f})" if w_mvp else "the starting lineup"
+    l_mvp_txt = f"{l_mvp['name']} ({l_mvp['points']:.1f})" if l_mvp else "their top starter"
+
+    if margin >= 60:
+        return pick([
+            f"Call the coroner: {w_name} {verb_big} {l_name} by {margin:.2f} pts. {w_mvp_txt} alone looked like a varsity squad scrimmaging a JV bench.",
+            f"Mercy-rule massacre (+{margin:.2f}): {w_name} dropped {win_pts:.2f} behind {w_mvp_txt} and sent {l_name} straight to the morgue.",
+            f"Public execution by {margin:.2f} pts: {l_name} posted {lose_pts:.2f} and had to sit there while {w_mvp_txt} ran up the score for {w_name}.",
+        ], seed)
+
+    if lose_pts < 75.0 and win_pts < mean_score:
+        return pick([
+            f"Cripple fight of the week: {w_name} won with a hideous {win_pts:.2f} only because {l_name} flatlined at {lose_pts:.2f}. Nobody deserved a W here.",
+            f"Medical malpractice on both sidelines: {w_name} staggered to {win_pts:.2f} while {l_name} couldn't even crack 75 ({lose_pts:.2f}).",
+        ], seed)
+
+    if lose_pts < 75.0:
+        bench_jab = (
+            f" Worse yet, {l_top_bench['name']} ({l_top_bench['points']:.1f}) watched the whole collapse from the bench."
+            if l_top_bench and l_top_bench["points"] >= 15.0 else ""
+        )
+        return pick([
+            f"DOA alert: {l_name} posted a crime-scene {lose_pts:.2f} as {w_name} cruised by {margin:.2f} behind {w_mvp_txt}.{bench_jab}",
+            f"Zero vital signs from {l_name} ({lose_pts:.2f}). {w_name} didn't even have to break a sweat to win by {margin:.2f}.{bench_jab}",
+        ], seed)
+
+    if combined >= mean_score * 2.42:
+        return pick([
+            f"Absolute firefight ({combined:.2f} combined): {w_name} outgunned {l_name} by {margin:.2f} — {l_name} scored {lose_pts:.2f} and STILL ate an L.",
+            f"Shootout carnage ({combined:.2f} total): {w_mvp_txt} lifted {w_name} past {l_mvp_txt} by {margin:.2f}. Brutal beat for {l_name}.",
+        ], seed)
+
+    if l_top_bench and l_top_bench["points"] >= 18.0 and l_top_bench["points"] >= margin * 0.75:
+        return pick([
+            f"Fire the coaching staff: {l_name} left {l_top_bench['name']} ({l_top_bench['points']:.1f} pts) rotting on the bench and lost to {w_name} by {margin:.2f}.",
+            f"Peak bench malpractice: {l_name} benched {l_top_bench['name']} ({l_top_bench['points']:.1f}) and handed {w_name} a {margin:.2f}-point gift.",
+        ], seed)
+
+    if margin <= 7.5:
+        return pick([
+            f"Daylight robbery by {margin:.2f} pts: {w_name} {verb_close} {l_name} behind {w_mvp_txt}, leaving {l_name} staring at the stat-correction page.",
+            f"Heartbreak in the trauma ward: {w_name} stole this one by {margin:.2f} pts — {l_name} is going to lose sleep over every single start/sit.",
+        ], seed)
+
+    if win_pts < mean_score - 8.0:
+        return pick([
+            f"Shameless schedule luck: {w_name} scored {round2(mean_score - win_pts):.2f} BELOW league average and still stole a {margin:.2f}-point W from {l_name}.",
+            f"Fraud-watch victory: {w_name} limped to {win_pts:.2f} and got bailed out by {l_name}'s {lose_pts:.2f} no-show.",
+        ], seed)
+
+    if w_wins < w_losses and l_wins < l_losses and week >= 5:
+        return pick([
+            f"Cellar-bowl chaos: {w_name} took the basement brawl by {margin:.2f} behind {w_mvp_txt}, while {l_name} kept their eyes firmly on the 1.01.",
+            f"Kids' table tussle: {w_name} ({w_wins}-{w_losses}) knocked off {l_name} ({l_wins}-{l_losses}) by {margin:.2f} — pure anti-tanking theater.",
+        ], seed)
+
+    return pick([
+        f"{w_mvp_txt} paced {w_name} past {l_name} by {margin:.2f} pts"
+        + (f", completely wasting {l_mvp_txt} for {l_name}." if l_mvp and l_mvp["points"] >= 22 else " with zero drama."),
+        f"Clinical beatdown: {w_name} {verb_mid} {l_name} by {margin:.2f} pts behind {w_mvp_txt}.",
+    ], seed)
+
+
+def build_upcoming_preview(
+    next_week: int,
+    teams_by_roster: dict[int, dict[str, Any]],
+    latest_standings: list[dict[str, Any]],
+    cum: dict[int, dict[str, Any]],
+    playoff_teams: int,
+) -> dict[str, Any] | None:
+    """Fetch next week's Sleeper schedule and build ruthless preview cards."""
+    if next_week > 17:
+        return None
+    try:
+        raw_next = fetch_json(f"{SLEEPER_BASE}/league/{LEAGUE_ID}/matchups/{next_week}")
+    except Exception:
+        return None
+    if not raw_next:
+        return None
+
+    by_mid: dict[int, list[dict[str, Any]]] = {}
+    for entry in raw_next:
+        mid = entry.get("matchup_id")
+        if mid is None:
+            continue
+        by_mid.setdefault(int(mid), []).append(entry)
+
+    rank_map = {r["roster_id"]: r for r in latest_standings}
+    next_theme = get_theme(next_week)
+    previews: list[dict[str, Any]] = []
+
+    for mid, pair in by_mid.items():
+        if len(pair) != 2:
+            continue
+        rid_a = int(pair[0]["roster_id"])
+        rid_b = int(pair[1]["roster_id"])
+        ra, rb = rank_map[rid_a], rank_map[rid_b]
+        # Order higher-ranked team first
+        if rb["rank"] < ra["rank"]:
+            rid_a, rid_b = rid_b, rid_a
+            ra, rb = rb, ra
+
+        scores_a = [x["points"] for x in cum[rid_a]["weekly_scores"]]
+        scores_b = [x["points"] for x in cum[rid_b]["weekly_scores"]]
+        avg_a = round2(statistics.mean(scores_a)) if scores_a else 0.0
+        avg_b = round2(statistics.mean(scores_b)) if scores_b else 0.0
+        rec3_a = round2(statistics.mean(scores_a[-3:])) if scores_a else 0.0
+        rec3_b = round2(statistics.mean(scores_b[-3:])) if scores_b else 0.0
+
+        power_a = avg_a * 0.65 + rec3_a * 0.35
+        power_b = avg_b * 0.65 + rec3_b * 0.35
+        fav_name = ra["team_name"] if power_a >= power_b else rb["team_name"]
+        dog_name = rb["team_name"] if power_a >= power_b else ra["team_name"]
+        edge = round2(abs(power_a - power_b))
+
+        a_in = ra["rank"] <= playoff_teams
+        b_in = rb["rank"] <= playoff_teams
+        seed = next_week * 31 + mid * 13
+
+        if a_in and b_in:
+            stake = "Playoff Seeding Clash"
+            priority = 1
+            blurb = pick([
+                f"Heavyweight collision for {next_theme['holiday']}: #{ra['rank']} {ra['team_name']} vs #{rb['rank']} {rb['team_name']}. Loser drops valuable bye/seeding leverage.",
+                f"Contender check-in: {ra['team_name']} ({ra['record']}) and {rb['team_name']} ({rb['record']}) collide with playoff seeding on the line. Expect zero mercy.",
+            ], seed)
+        elif a_in and rb["rank"] <= playoff_teams + 2:
+            stake = "Bubble Survival"
+            priority = 2
+            blurb = pick([
+                f"Must-win triage for #{rb['rank']} {rb['team_name']} ({rb['record']}). Drop this to {ra['team_name']} and the playoff door slams shut.",
+                f"Life-support week for {rb['team_name']}: beating #{ra['rank']} {ra['team_name']} keeps the dream alive — losing sends them straight to Max PF math.",
+            ], seed)
+        elif a_in and rb["rank"] >= 10:
+            stake = "Trap Game / Massacre Watch"
+            priority = 3
+            blurb = pick([
+                f"Classic trap alert: #{ra['rank']} {ra['team_name']} should handle #{rb['rank']} {rb['team_name']} ({rb['record']}), which means an upset would break the group chat.",
+                f"David vs. Goliath on {next_theme['holiday']} week: {ra['team_name']} is hunting a routine W, while {rb['team_name']} is either playing spoiler or protecting 1.01.",
+            ], seed)
+        elif not a_in and not b_in and ra["rank"] >= 9 and rb["rank"] >= 9:
+            stake = "Cellar Bowl"
+            priority = 5
+            blurb = pick([
+                f"Basement derby: {ra['team_name']} ({ra['record']}) vs {rb['team_name']} ({rb['record']}). Pride is on the line, though both managers are secretly eyeing draft capital.",
+                f"Kids' table main event: {ra['team_name']} and {rb['team_name']} square off in a matchup only the Max PF tracker truly loves.",
+            ], seed)
+        else:
+            stake = "Spoiler Alert"
+            priority = 4
+            blurb = pick([
+                f"#{ra['rank']} {ra['team_name']} ({ra['record']}) can't afford a slip-up against #{rb['rank']} {rb['team_name']} ({rb['record']}) heading into {next_theme['edition']}.",
+                f"No-excuses spot for {ra['team_name']} against {rb['team_name']}. {fav_name} enters with a +{edge:.1f} form edge over {dog_name}.",
+            ], seed)
+
+        previews.append({
+            "matchup_id": mid,
+            "priority": priority,
+            "stake": stake,
+            "favorite": fav_name,
+            "edge": edge,
+            "blurb": blurb,
+            "team_a": {
+                "roster_id": rid_a,
+                "rank": ra["rank"],
+                "team_name": ra["team_name"],
+                "manager": ra["manager"],
+                "avatar": ra["avatar"],
+                "record": ra["record"],
+                "streak": ra["streak"],
+                "avg": avg_a,
+            },
+            "team_b": {
+                "roster_id": rid_b,
+                "rank": rb["rank"],
+                "team_name": rb["team_name"],
+                "manager": rb["manager"],
+                "avatar": rb["avatar"],
+                "record": rb["record"],
+                "streak": rb["streak"],
+                "avg": avg_b,
+            },
+        })
+
+    previews.sort(key=lambda x: (x["priority"], x["team_a"]["rank"]))
+    return {
+        "week": next_week,
+        "theme": {
+            "id": next_theme["id"],
+            "motif": next_theme["motif"],
+            "holiday": next_theme["holiday"],
+            "edition": next_theme["edition"],
+            "accent": next_theme["accent"],
+        },
+        "matchups": previews,
+    }
 
 
 def build_data() -> dict[str, Any]:
@@ -415,7 +650,6 @@ def build_data() -> dict[str, Any]:
     playoff_week_start = int(league.get("settings", {}).get("playoff_week_start", 15))
     leg = int(league.get("settings", {}).get("leg", 1))
     display_week = int(nfl_state.get("display_week") or leg)
-    # Determine highest completed week by checking matchups with non-zero points
     max_probe_week = min(17, max(leg, display_week))
 
     user_map = {u["user_id"]: u for u in users}
@@ -425,7 +659,6 @@ def build_data() -> dict[str, Any]:
         u = user_map.get(r.get("owner_id"), {})
         meta = u.get("metadata") or {}
         team_name = (meta.get("team_name") or u.get("display_name") or f"Team {rid}").strip()
-        # Normalize curly apostrophes for cleaner search/display consistency
         team_name = team_name.replace("\u2019", "'")
         manager = u.get("display_name") or f"Manager {rid}"
         avatar_id = meta.get("avatar") or u.get("avatar")
@@ -452,7 +685,6 @@ def build_data() -> dict[str, Any]:
             "efficiency": round2((pf / max_pf * 100.0) if max_pf > 0 else 0.0),
         }
 
-    # Fetch all matchups for weeks 1..max_probe_week
     raw_matchups_by_week: dict[int, list[dict[str, Any]]] = {}
     needed_player_ids: set[str] = set()
     completed_weeks: list[int] = []
@@ -472,8 +704,6 @@ def build_data() -> dict[str, Any]:
 
     players = load_or_fetch_players(needed_player_ids)
 
-    # Track cumulative stats per roster week-by-week so archive weeks show exact
-    # standings, streaks, all-play records, and playoff seedings as of that week!
     cum: dict[int, dict[str, Any]] = {
         rid: {
             "wins": 0,
@@ -497,7 +727,6 @@ def build_data() -> dict[str, Any]:
         mdata = raw_matchups_by_week[w]
         theme = get_theme(w)
 
-        # Group by matchup_id
         by_mid: dict[int, list[dict[str, Any]]] = {}
         for entry in mdata:
             mid = entry.get("matchup_id")
@@ -505,7 +734,6 @@ def build_data() -> dict[str, Any]:
                 continue
             by_mid.setdefault(int(mid), []).append(entry)
 
-        # Compute pre-week ranks for upset detection
         pre_ranks: dict[int, int] = {}
         if w > 1:
             pre_sorted = sorted(
@@ -515,7 +743,6 @@ def build_data() -> dict[str, Any]:
             )
             pre_ranks = {r: idx + 1 for idx, r in enumerate(pre_sorted)}
 
-        # Compute all-play for this week
         week_scores_list = [(int(e["roster_id"]), round2(float(e.get("points") or 0.0))) for e in mdata]
         scores_only = [pts for _, pts in week_scores_list]
         mean_score = round2(statistics.mean(scores_only)) if scores_only else 0.0
@@ -531,7 +758,6 @@ def build_data() -> dict[str, Any]:
         matchups_out: list[dict[str, Any]] = []
         bench_regrets: list[dict[str, Any]] = []
         top_starters_league: list[dict[str, Any]] = []
-        winner_ids: set[int] = set()
 
         def extract_lineup(entry: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
             pp = entry.get("players_points") or {}
@@ -574,7 +800,6 @@ def build_data() -> dict[str, Any]:
             is_tie = abs(win_pts - lose_pts) < 0.001
             margin = round2(win_pts - lose_pts)
 
-            # Update cumulative records
             cum[wid]["pf"] = round2(cum[wid]["pf"] + win_pts)
             cum[wid]["pa"] = round2(cum[wid]["pa"] + lose_pts)
             cum[lid]["pf"] = round2(cum[lid]["pf"] + lose_pts)
@@ -584,7 +809,6 @@ def build_data() -> dict[str, Any]:
                 cum[wid]["ties"] += 1
                 cum[lid]["ties"] += 1
             else:
-                winner_ids.add(wid)
                 cum[wid]["wins"] += 1
                 cum[lid]["losses"] += 1
                 if cum[wid]["streak_type"] == "W":
@@ -619,7 +843,6 @@ def build_data() -> dict[str, Any]:
                         "margin": m_val,
                     })
 
-            # Upset score: difference in pre-week rank (positive if lower-ranked team beat higher-ranked team)
             upset_delta = 0
             if pre_ranks and not is_tie:
                 upset_delta = pre_ranks.get(wid, 6) - pre_ranks.get(lid, 6)
@@ -628,48 +851,29 @@ def build_data() -> dict[str, Any]:
             l_mvp = l_starters[0] if l_starters else None
             l_top_bench = l_bench[0] if l_bench else None
 
-            # Craft unbiased, fun, holiday-flavored triage note
             w_name = teams_by_roster[wid]["team_name"]
             l_name = teams_by_roster[lid]["team_name"]
             combined = round2(win_pts + lose_pts)
-            verb_big, verb_mid, verb_close = theme["verbs"]
 
-            if margin >= 60:
-                triage_note = (
-                    f"Code Blue blowout by {margin:.2f} pts: "
-                    f"{w_mvp['name']} ({w_mvp['points']:.1f}) led {w_name} as they {verb_big} {l_name}."
-                    if w_mvp else f"Code Blue blowout by {margin:.2f} pts."
-                )
-            elif combined >= mean_score * 2.45:
-                triage_note = (
-                    f"Shootout of the week ({combined:.2f} combined): "
-                    f"{w_mvp['name']} ({w_mvp['points']:.1f}) helped {w_name} outgun "
-                    f"{l_mvp['name']} ({l_mvp['points']:.1f}) by {margin:.2f} pts."
-                    if w_mvp and l_mvp else f"High-scoring shootout ({combined:.2f} combined)."
-                )
-            elif margin <= 8.0:
-                triage_note = (
-                    f"Razor-thin escape by {margin:.2f} pts: "
-                    f"{w_name} {verb_close} {l_name} behind {w_mvp['name']}'s {w_mvp['points']:.1f} pts."
-                    if w_mvp else f"Razor-thin escape by {margin:.2f} pts."
-                )
-            elif l_top_bench and l_top_bench["points"] >= 18.0 and l_top_bench["points"] > margin * 0.6:
-                triage_note = (
-                    f"Bench malpractice watch: {l_name} left {l_top_bench['name']} ({l_top_bench['points']:.1f} pts) "
-                    f"on the pine as {w_name} took it by {margin:.2f}."
-                )
-            elif win_pts < mean_score:
-                triage_note = (
-                    f"Ugly survival: {w_name} won by {margin:.2f} despite scoring "
-                    f"{round2(mean_score - win_pts):.2f} below the league average."
-                )
-            else:
-                triage_note = (
-                    f"{w_mvp['name']} ({w_mvp['points']:.1f}) paced {w_name} past {l_name} "
-                    f"by {margin:.2f} pts"
-                    + (f", erasing {l_mvp['name']}'s {l_mvp['points']:.1f}." if l_mvp and l_mvp["points"] >= 22 else ".")
-                    if w_mvp else f"{w_name} defeated {l_name} by {margin:.2f} pts."
-                )
+            triage_note = build_roast_note(
+                week=w,
+                mid=mid,
+                theme=theme,
+                w_name=w_name,
+                l_name=l_name,
+                win_pts=win_pts,
+                lose_pts=lose_pts,
+                margin=margin,
+                combined=combined,
+                mean_score=mean_score,
+                w_mvp=w_mvp,
+                l_mvp=l_mvp,
+                l_top_bench=l_top_bench,
+                w_wins=cum[wid]["wins"],
+                w_losses=cum[wid]["losses"],
+                l_wins=cum[lid]["wins"],
+                l_losses=cum[lid]["losses"],
+            )
 
             matchups_out.append({
                 "matchup_id": mid,
@@ -699,13 +903,14 @@ def build_data() -> dict[str, Any]:
                 "triage_note": triage_note,
             })
 
-        # Sort matchups from highest winning score down (cleanest carving -> ugliest trench fight)
         matchups_out.sort(key=lambda m: (m["winner"]["points"], m["combined"]), reverse=True)
 
-        # Build week standings snapshot
         standings_rows = []
         for rid, t in teams_by_roster.items():
             c = cum[rid]
+            games = max(1, c["wins"] + c["losses"] + c["ties"])
+            win_pct = round2(c["wins"] / games * 100.0)
+            ap_pct = round2(c["all_play_w"] / max(1, c["all_play_w"] + c["all_play_l"]) * 100.0)
             standings_rows.append({
                 "roster_id": rid,
                 "team_name": t["team_name"],
@@ -720,15 +925,39 @@ def build_data() -> dict[str, Any]:
                 "max_pf": t["max_pf"] if w == latest_week else None,
                 "pa": round2(c["pa"]),
                 "all_play": f"{c['all_play_w']}-{c['all_play_l']}",
-                "all_play_pct": round2(
-                    c["all_play_w"] / max(1, c["all_play_w"] + c["all_play_l"]) * 100.0
-                ),
+                "all_play_pct": ap_pct,
+                "luck_delta": round2(win_pct - ap_pct),
             })
         standings_rows.sort(key=lambda r: (r["wins"], r["pf"], r["pa"]), reverse=True)
         for idx, row in enumerate(standings_rows, start=1):
             row["rank"] = idx
 
-        # Scoring distribution (sorted highest to lowest)
+        # Fraud Alert & Schedule Victim (for maximum league-chat banter!)
+        biggest_fraud = max(standings_rows, key=lambda r: r["luck_delta"])
+        biggest_victim = min(standings_rows, key=lambda r: r["luck_delta"])
+        fraud_watch = {
+            "fraud": {
+                "team_name": biggest_fraud["team_name"],
+                "record": biggest_fraud["record"],
+                "all_play": biggest_fraud["all_play"],
+                "luck_delta": biggest_fraud["luck_delta"],
+                "roast": (
+                    f"{biggest_fraud['team_name']} ({biggest_fraud['record']}) is riding +{biggest_fraud['luck_delta']:.1f}% "
+                    f"schedule luck over their {biggest_fraud['all_play']} All-Play record. Paper tiger alert."
+                ),
+            },
+            "victim": {
+                "team_name": biggest_victim["team_name"],
+                "record": biggest_victim["record"],
+                "all_play": biggest_victim["all_play"],
+                "luck_delta": biggest_victim["luck_delta"],
+                "roast": (
+                    f"{biggest_victim['team_name']} ({biggest_victim['record']}) owns a {biggest_victim['all_play']} All-Play "
+                    f"mark ({biggest_victim['luck_delta']:.1f}% luck) — the schedule gods chose violence."
+                ),
+            },
+        }
+
         scoring_bars = []
         opp_lookup = {}
         for m in matchups_out:
@@ -747,12 +976,11 @@ def build_data() -> dict[str, Any]:
                 "margin": signed_margin,
             })
 
-        # Weekly Awards (completely unbiased, league-wide)
         high_bar = scoring_bars[0]
         low_bar = scoring_bars[-1]
         closest_m = min(matchups_out, key=lambda m: m["margin"])
         upset_m = max(matchups_out, key=lambda m: (m["upset_delta"], -m["margin"]))
-        # Bench malpractice: prioritize losing teams with huge bench points, else highest overall bench player
+        shootout_m = max(matchups_out, key=lambda m: m["combined"])
         bench_regrets.sort(key=lambda b: (b["points"] + (6.0 if b["lost_matchup"] else 0.0)), reverse=True)
         worst_bench = bench_regrets[0] if bench_regrets else None
         top_starters_league.sort(key=lambda s: s["points"], reverse=True)
@@ -764,31 +992,30 @@ def build_data() -> dict[str, Any]:
                 "title": aw["high"][0],
                 "team": high_bar["team_name"],
                 "stat": f"{high_bar['points']:.2f} pts",
-                "detail": f"+{round2(high_bar['points'] - mean_score):.2f} above league average ({mean_score:.2f}).",
+                "detail": f"Lapped the field by +{round2(high_bar['points'] - mean_score):.2f} over the {mean_score:.2f} league average.",
             },
             {
                 "key": "low",
                 "title": aw["low"][0],
                 "team": low_bar["team_name"],
                 "stat": f"{low_bar['points']:.2f} pts",
-                "detail": f"{round2(mean_score - low_bar['points']):.2f} pts below the Week {w} mean.",
+                "detail": f"Cratered {round2(mean_score - low_bar['points']):.2f} pts below the Week {w} mean. Check for a pulse.",
             },
             {
                 "key": "close",
                 "title": aw["close"][0],
                 "team": closest_m["winner"]["team_name"],
                 "stat": f"+{closest_m['margin']:.2f} pts",
-                "detail": f"Edged {closest_m['loser']['team_name']} ({closest_m['winner']['points']:.2f}–{closest_m['loser']['points']:.2f}).",
+                "detail": f"Robbed {closest_m['loser']['team_name']} ({closest_m['winner']['points']:.2f}–{closest_m['loser']['points']:.2f}).",
             },
         ]
-        shootout_m = max(matchups_out, key=lambda m: m["combined"])
         if upset_m["upset_delta"] > 0 and upset_m["matchup_id"] != closest_m["matchup_id"]:
             awards_out.append({
                 "key": "upset",
                 "title": aw["upset"][0],
                 "team": upset_m["winner"]["team_name"],
                 "stat": f"#{pre_ranks[upset_m['winner']['roster_id']]} over #{pre_ranks[upset_m['loser']['roster_id']]}",
-                "detail": f"Knocked off {upset_m['loser']['team_name']} {upset_m['winner']['points']:.2f}–{upset_m['loser']['points']:.2f}.",
+                "detail": f"Humiliated {upset_m['loser']['team_name']} {upset_m['winner']['points']:.2f}–{upset_m['loser']['points']:.2f}.",
             })
         else:
             awards_out.append({
@@ -796,7 +1023,7 @@ def build_data() -> dict[str, Any]:
                 "title": "Shootout of the Week",
                 "team": f"{shootout_m['winner']['team_name']} vs {shootout_m['loser']['team_name']}",
                 "stat": f"{shootout_m['combined']:.2f} pts",
-                "detail": f"{shootout_m['winner']['team_name']} took the firefight {shootout_m['winner']['points']:.2f}–{shootout_m['loser']['points']:.2f}.",
+                "detail": f"{shootout_m['winner']['team_name']} survived the track meet {shootout_m['winner']['points']:.2f}–{shootout_m['loser']['points']:.2f}.",
             })
         if worst_bench:
             awards_out.append({
@@ -804,60 +1031,71 @@ def build_data() -> dict[str, Any]:
                 "title": aw["bench"][0],
                 "team": worst_bench["team_name"],
                 "stat": f"{worst_bench['points']:.1f} pts",
-                "detail": f"Left {worst_bench['player_name']} ({worst_bench['pos']}) on the bench"
-                + (" in a loss." if worst_bench["lost_matchup"] else "."),
+                "detail": f"Left {worst_bench['player_name']} ({worst_bench['pos']}) rotting on the pine"
+                + (" in an L." if worst_bench["lost_matchup"] else "."),
             })
 
-        # Unbiased Hero Headline & Editorial Ward Report
         high_matchup = next(m for m in matchups_out if m["winner"]["roster_id"] == high_bar["roster_id"])
         leader1, leader2 = standings_rows[0], standings_rows[1]
         seed6, seed7 = standings_rows[playoff_teams - 1], standings_rows[playoff_teams]
+        cellar = standings_rows[-1]
         bubble_gap = seed6["wins"] - seed7["wins"]
         weeks_left = max(0, playoff_week_start - 1 - w)
 
         deck = (
             f"{high_bar['team_name']} {theme['verbs'][0]} {high_matchup['loser']['team_name']} "
-            f"for {high_bar['points']:.2f} points to pace Week {w}, while "
-            f"{closest_m['winner']['team_name']} survived a {closest_m['winner']['points']:.2f}–"
-            f"{closest_m['loser']['points']:.2f} nail-biter over {closest_m['loser']['team_name']} "
+            f"for {high_bar['points']:.2f} points while {low_bar['team_name']} flatlined at {low_bar['points']:.2f}, "
+            f"and {closest_m['winner']['team_name']} robbed {closest_m['loser']['team_name']} by {closest_m['margin']:.2f} "
             f"in {league.get('name', 'Tier 1 Dynasty')}."
         )
 
         if bubble_gap >= 2:
             gap_phrase = f"two full games ({bubble_gap}W) clear of the #{playoff_teams + 1} bubble"
         elif bubble_gap == 1:
-            gap_phrase = f"one game ahead of the #{playoff_teams + 1} bubble"
+            gap_phrase = f"just one game ahead of the #{playoff_teams + 1} bubble"
         else:
-            gap_phrase = f"locked in a dead-heat tiebreaker battle with {seed7['team_name']}"
+            gap_phrase = f"clinging to a PF tiebreaker over {seed7['team_name']}"
 
         ward_headline = (
-            f"{leader1['team_name']} Leads the Ward as Playoff Lines Sharpen"
+            f"{leader1['team_name']} Runs the Ward While {cellar['team_name']} Holds the Morgue Key"
             if w >= 8
             else f"{leader1['team_name']} Sets the Pace in {theme['edition']}"
         )
 
         ward_p1 = (
-            f"Coming out of Week {w} ({theme['holiday']}), {leader1['team_name']} ({leader1['record']}, {leader1['streak']}) "
-            f"and {leader2['team_name']} ({leader2['record']}, {leader2['streak']}) sit atop the Tier 1 standings. "
-            f"At the cutoff, {seed6['team_name']} ({seed6['record']}) holds the #{playoff_teams} seed — {gap_phrase} "
-            f"with {weeks_left} regular-season {'week' if weeks_left == 1 else 'weeks'} remaining before the Week {playoff_week_start} bracket."
+            f"Out of Week {w} ({theme['holiday']}), {leader1['team_name']} ({leader1['record']}, {leader1['streak']}) "
+            f"and {leader2['team_name']} ({leader2['record']}, {leader2['streak']}) own the top of the ward. "
+            f"At the cutoff, {seed6['team_name']} ({seed6['record']}) sits #{playoff_teams} — {gap_phrase} "
+            f"with {weeks_left} regular-season {'week' if weeks_left == 1 else 'weeks'} left before Week {playoff_week_start} playoffs."
             if w < playoff_week_start
-            else f"Postseason triage is underway in Week {w} ({theme['holiday']}), led by {high_bar['team_name']}'s {high_bar['points']:.2f}-point surge."
+            else f"Postseason triage is live in Week {w} ({theme['holiday']}), headlined by {high_bar['team_name']}'s {high_bar['points']:.2f}-point detonation."
         )
 
         mvp1 = top_starters_league[0] if top_starters_league else None
         mvp2 = top_starters_league[1] if len(top_starters_league) > 1 else None
         ward_p2 = (
-            f"Six teams cleared the {median_score:.2f} median while {low_bar['team_name']} "
-            f"hit the week's floor at {low_bar['points']:.2f}. "
+            f"Six teams cleared the {median_score:.2f} median while {low_bar['team_name']} dragged the league floor down to {low_bar['points']:.2f} "
+            f"and {cellar['team_name']} ({cellar['record']}) anchored 12th place. "
             + (
-                f"Individual fireworks were headlined by {mvp1['name']} ({mvp1['points']:.1f} pts for {mvp1['team_name']})"
+                f"Weekly MVP fireworks belonged to {mvp1['name']} ({mvp1['points']:.1f} pts for {mvp1['team_name']})"
                 + (f" and {mvp2['name']} ({mvp2['points']:.1f} pts for {mvp2['team_name']})." if mvp2 else ".")
                 if mvp1 else ""
             )
         )
 
-        # Playoff seedings & Projected Draft Order (Max PF for latest week)
+        # Ready-to-paste Group Chat Blurb for Sleeper / Text Chat
+        chat_blurb = (
+            f"🚨 TIER 1 TRAUMA — WEEK {w}: {theme['edition'].upper()} 🚨\n"
+            f"🔥 {aw['high'][0]}: {high_bar['team_name']} ({high_bar['points']:.2f} pts)\n"
+            f"💀 {aw['low'][0]}: {low_bar['team_name']} ({low_bar['points']:.2f} pts)\n"
+            f"🔪 {aw['close'][0]}: {closest_m['winner']['team_name']} over {closest_m['loser']['team_name']} by {closest_m['margin']:.2f}\n"
+            + (
+                f"🪑 {aw['bench'][0]}: {worst_bench['team_name']} benched {worst_bench['player_name']} ({worst_bench['points']:.1f})\n"
+                if worst_bench else ""
+            )
+            + f"📊 Full triage, fraud watch & next week's slate: {SITE_URL}?week={w}"
+        )
+
         playoff_picture = []
         for idx, row in enumerate(standings_rows[:8], start=1):
             if idx <= 2:
@@ -888,6 +1126,7 @@ def build_data() -> dict[str, Any]:
             "dispatch_date": dispatch_date_for_week(season, w),
             "theme": {
                 "id": theme["id"],
+                "motif": theme["motif"],
                 "holiday": theme["holiday"],
                 "edition": theme["edition"],
                 "accent": theme["accent"],
@@ -896,8 +1135,10 @@ def build_data() -> dict[str, Any]:
             },
             "headline": f"Tier 1 Trauma: {theme['edition']}",
             "deck": deck,
+            "chat_blurb": chat_blurb,
             "ward_headline": ward_headline,
             "ward_paragraphs": [ward_p1, ward_p2],
+            "fraud_watch": fraud_watch,
             "stats": {
                 "high_score": high_bar["points"],
                 "high_team": high_bar["team_name"],
@@ -917,7 +1158,6 @@ def build_data() -> dict[str, Any]:
             "playoff_picture": playoff_picture,
         })
 
-    # Projected Rookie Draft Order (Anti-Tanking Max PF rules for current standings)
     latest_standings = weeks_out[-1]["standings"] if weeks_out else []
     non_playoff = [r for r in latest_standings if r["rank"] > playoff_teams]
     playoff_squads = [r for r in latest_standings if r["rank"] <= playoff_teams]
@@ -952,7 +1192,6 @@ def build_data() -> dict[str, Any]:
             "lottery": False,
         })
 
-    # Team season profiles for the interactive "Team Pulse" explorer
     team_profiles = []
     for row in latest_standings:
         rid = row["roster_id"]
@@ -979,7 +1218,15 @@ def build_data() -> dict[str, Any]:
             "weekly_scores": scores,
         })
 
-    payload = {
+    upcoming = build_upcoming_preview(
+        next_week=latest_week + 1,
+        teams_by_roster=teams_by_roster,
+        latest_standings=latest_standings,
+        cum=cum,
+        playoff_teams=playoff_teams,
+    )
+
+    return {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
         "next_dispatch_at": next_tuesday_iso(),
         "league": {
@@ -994,21 +1241,21 @@ def build_data() -> dict[str, Any]:
             "sleeper_url": f"https://sleeper.com/leagues/{LEAGUE_ID}",
         },
         "latest_week": latest_week,
+        "upcoming": upcoming,
         "draft_order": draft_order,
         "team_profiles": team_profiles,
         "weeks": weeks_out,
     }
-    return payload
 
 
 def main() -> None:
     payload = build_data()
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    up_w = payload["upcoming"]["week"] if payload.get("upcoming") else "none"
     print(
         f"Generated {OUTPUT_FILE} — Season {payload['league']['season']}, "
-        f"{len(payload['weeks'])} weeks (latest: Week {payload['latest_week']} · "
-        f"{payload['weeks'][-1]['theme']['edition']})."
+        f"{len(payload['weeks'])} weeks (latest: Week {payload['latest_week']}, upcoming preview: Week {up_w})."
     )
 
 

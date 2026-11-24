@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T15:46:03.849483Z",
+  "generated_at": "2026-11-24T15:56:19.087551Z",
   "next_dispatch_at": "2026-12-01T14:30:00Z",
   "league": {
     "id": "1398719645564796928",
@@ -13,6 +13,186 @@
     "sleeper_url": "https://sleeper.com/leagues/1398719645564796928"
   },
   "latest_week": 11,
+  "upcoming": {
+    "week": 12,
+    "theme": {
+      "id": "black-friday",
+      "motif": "tag",
+      "holiday": "Black Friday & Cyber Monday",
+      "edition": "Black Friday Clearance",
+      "accent": "#EAB308"
+    },
+    "matchups": [
+      {
+        "matchup_id": 4,
+        "priority": 1,
+        "stake": "Playoff Seeding Clash",
+        "favorite": "CeeDee's Nutz",
+        "edge": 12.73,
+        "blurb": "Heavyweight collision for Black Friday & Cyber Monday: #4 CeeDee's Nutz vs #6 Glock Purdy & Mac-10. Loser drops valuable bye/seeding leverage.",
+        "team_a": {
+          "roster_id": 11,
+          "rank": 4,
+          "team_name": "CeeDee's Nutz",
+          "manager": "FockerRN",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183",
+          "record": "7-4",
+          "streak": "W2",
+          "avg": 139.47
+        },
+        "team_b": {
+          "roster_id": 4,
+          "rank": 6,
+          "team_name": "Glock Purdy & Mac-10",
+          "manager": "coop4157",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/a6d6093d0b6f06186303c2383b4e8963",
+          "record": "7-4",
+          "streak": "W3",
+          "avg": 131.64
+        }
+      },
+      {
+        "matchup_id": 6,
+        "priority": 2,
+        "stake": "Bubble Survival",
+        "favorite": "Underdog vikings",
+        "edge": 3.72,
+        "blurb": "Must-win triage for #7 Underdog vikings (5-6). Drop this to Justin the Nix of time and the playoff door slams shut.",
+        "team_a": {
+          "roster_id": 8,
+          "rank": 2,
+          "team_name": "Justin the Nix of time",
+          "manager": "JThompson77",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/ba83b50228cabdc8223b675bfad53aa9",
+          "record": "8-3",
+          "streak": "W1",
+          "avg": 142.31
+        },
+        "team_b": {
+          "roster_id": 7,
+          "rank": 7,
+          "team_name": "Underdog vikings",
+          "manager": "Minnesotavikings26",
+          "avatar": "https://sleepercdn.com/uploads/e2232037bae26fd475bf00ecb371c160.jpg",
+          "record": "5-6",
+          "streak": "L2",
+          "avg": 137.51
+        }
+      },
+      {
+        "matchup_id": 2,
+        "priority": 3,
+        "stake": "Trap Game / Massacre Watch",
+        "favorite": "Bijan Mustard",
+        "edge": 50.98,
+        "blurb": "Classic trap alert: #3 Bijan Mustard should handle #11 Dislocated Dreams (3-8), which means an upset would break the group chat.",
+        "team_a": {
+          "roster_id": 10,
+          "rank": 3,
+          "team_name": "Bijan Mustard",
+          "manager": "JonnyRockets3",
+          "avatar": "https://sleepercdn.com/uploads/17b145753dbc53f0957729bb1e1af443.jpg",
+          "record": "7-4",
+          "streak": "L1",
+          "avg": 140.72
+        },
+        "team_b": {
+          "roster_id": 3,
+          "rank": 11,
+          "team_name": "Dislocated Dreams",
+          "manager": "jwilhelm",
+          "avatar": "https://sleepercdn.com/uploads/25512fbe00a7eef62811dbfec9e2ba65.jpg",
+          "record": "3-8",
+          "streak": "W1",
+          "avg": 99.94
+        }
+      },
+      {
+        "matchup_id": 1,
+        "priority": 3,
+        "stake": "Trap Game / Massacre Watch",
+        "favorite": "Hebrew Hammer",
+        "edge": 26.2,
+        "blurb": "David vs. Goliath on Black Friday & Cyber Monday week: Hebrew Hammer is hunting a routine W, while Eliquis Hurts is either playing spoiler or protecting 1.01.",
+        "team_a": {
+          "roster_id": 6,
+          "rank": 5,
+          "team_name": "Hebrew Hammer",
+          "manager": "gamosse2",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/d51f7080b674659c7baacd581b271529",
+          "record": "7-4",
+          "streak": "L2",
+          "avg": 132.42
+        },
+        "team_b": {
+          "roster_id": 12,
+          "rank": 12,
+          "team_name": "Eliquis Hurts",
+          "manager": "aaalexia",
+          "avatar": "https://sleepercdn.com/images/v4/avatars/avatar_default_mint.webp",
+          "record": "2-9",
+          "streak": "L3",
+          "avg": 101.73
+        }
+      },
+      {
+        "matchup_id": 5,
+        "priority": 4,
+        "stake": "Spoiler Alert",
+        "favorite": "Malone Wilson Flynn & Co",
+        "edge": 58.26,
+        "blurb": "No-excuses spot for Malone Wilson Flynn & Co against Maye's Way. Malone Wilson Flynn & Co enters with a +58.3 form edge over Maye's Way.",
+        "team_a": {
+          "roster_id": 2,
+          "rank": 1,
+          "team_name": "Malone Wilson Flynn & Co",
+          "manager": "tlaud52",
+          "avatar": "",
+          "record": "8-3",
+          "streak": "W3",
+          "avg": 149.18
+        },
+        "team_b": {
+          "roster_id": 9,
+          "rank": 9,
+          "team_name": "Maye's Way",
+          "manager": "RealSlimBrady9",
+          "avatar": "https://sleepercdn.com/uploads/6e29dde3f68268128e5be43549ccd086.jpg",
+          "record": "4-7",
+          "streak": "L5",
+          "avg": 103.95
+        }
+      },
+      {
+        "matchup_id": 3,
+        "priority": 4,
+        "stake": "Spoiler Alert",
+        "favorite": "AHHHLLL",
+        "edge": 14.37,
+        "blurb": "No-excuses spot for AHHHLLL against BTFU. AHHHLLL enters with a +14.4 form edge over BTFU.",
+        "team_a": {
+          "roster_id": 5,
+          "rank": 8,
+          "team_name": "AHHHLLL",
+          "manager": "AHHHLLL",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/578c6b253dd7b4bab45382e1af102204",
+          "record": "5-6",
+          "streak": "L1",
+          "avg": 121.33
+        },
+        "team_b": {
+          "roster_id": 1,
+          "rank": 10,
+          "team_name": "BTFU",
+          "manager": "EDRN45",
+          "avatar": "https://sleepercdn.com/uploads/c156013da578232f9f31b98e72efa3dd",
+          "record": "3-8",
+          "streak": "W2",
+          "avg": 110.75
+        }
+      }
+    ]
+  },
   "draft_order": [
     {
       "pick": "1.01",
@@ -983,19 +1163,37 @@
       "dispatch_date": "Sep 15, 2026",
       "theme": {
         "id": "labor-day",
+        "motif": "briefcase",
         "holiday": "Labor Day",
         "edition": "Labor Day Intake",
         "accent": "#3B82F6",
         "accent_soft": "rgba(59, 130, 246, 0.16)",
-        "tagline": "No days off in the Tier 1 Trauma ward \u2014 Opening Week vitals are in."
+        "tagline": "No days off in the Tier 1 Trauma ward \u2014 Opening Week vitals are in, and several rosters already need FMLA."
       },
       "headline": "Tier 1 Trauma: Labor Day Intake",
-      "deck": "Hebrew Hammer clocked Eliquis Hurts for 192.30 points to pace Week 1, while AHHHLLL survived a 142.22\u2013109.18 nail-biter over BTFU in Tier 1 Dynasty.",
+      "deck": "Hebrew Hammer clocked out Eliquis Hurts for 192.30 points while Maye's Way flatlined at 85.52, and AHHHLLL robbed BTFU by 33.04 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 1: LABOR DAY INTAKE \ud83d\udea8\n\ud83d\udd25 Employee of the Week: Hebrew Hammer (192.30 pts)\n\ud83d\udc80 No-Call, No-Show: Maye's Way (85.52 pts)\n\ud83d\udd2a Overtime Robbery: AHHHLLL over BTFU by 33.04\n\ud83e\ude91 Left on Smoke Break: Malone Wilson Flynn & Co benched Bryce Young (31.4)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=1",
       "ward_headline": "Hebrew Hammer Sets the Pace in Labor Day Intake",
       "ward_paragraphs": [
-        "Coming out of Week 1 (Labor Day), Hebrew Hammer (1-0, W1) and Glock Purdy & Mac-10 (1-0, W1) sit atop the Tier 1 standings. At the cutoff, Malone Wilson Flynn & Co (1-0) holds the #6 seed \u2014 one game ahead of the #7 bubble with 13 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 129.48 median while Maye's Way hit the week's floor at 85.52. Individual fireworks were headlined by Caleb Williams (37.3 pts for Eliquis Hurts) and Josh Allen (35.7 pts for BTFU)."
+        "Out of Week 1 (Labor Day), Hebrew Hammer (1-0, W1) and Glock Purdy & Mac-10 (1-0, W1) own the top of the ward. At the cutoff, Malone Wilson Flynn & Co (1-0) sits #6 \u2014 just one game ahead of the #7 bubble with 13 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 129.48 median while Maye's Way dragged the league floor down to 85.52 and Maye's Way (0-1) anchored 12th place. Weekly MVP fireworks belonged to Caleb Williams (37.3 pts for Eliquis Hurts) and Josh Allen (35.7 pts for BTFU)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Malone Wilson Flynn & Co",
+          "record": "1-0",
+          "all_play": "6-5",
+          "luck_delta": 45.45,
+          "roast": "Malone Wilson Flynn & Co (1-0) is riding +45.5% schedule luck over their 6-5 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "CeeDee's Nutz",
+          "record": "0-1",
+          "all_play": "5-6",
+          "luck_delta": -45.45,
+          "roast": "CeeDee's Nutz (0-1) owns a 5-6 All-Play mark (-45.5% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 192.3,
         "high_team": "Hebrew Hammer",
@@ -1069,35 +1267,35 @@
           "title": "Employee of the Week",
           "team": "Hebrew Hammer",
           "stat": "192.30 pts",
-          "detail": "+59.04 above league average (133.26)."
+          "detail": "Lapped the field by +59.04 over the 133.26 league average."
         },
         {
           "key": "low",
-          "title": "Called In Sick",
+          "title": "No-Call, No-Show",
           "team": "Maye's Way",
           "stat": "85.52 pts",
-          "detail": "47.74 pts below the Week 1 mean."
+          "detail": "Cratered 47.74 pts below the Week 1 mean. Check for a pulse."
         },
         {
           "key": "close",
-          "title": "Overtime Shift",
+          "title": "Overtime Robbery",
           "team": "AHHHLLL",
           "stat": "+33.04 pts",
-          "detail": "Edged BTFU (142.22\u2013109.18)."
+          "detail": "Robbed BTFU (142.22\u2013109.18)."
         },
         {
           "key": "shootout",
           "title": "Shootout of the Week",
           "team": "Hebrew Hammer vs Eliquis Hurts",
           "stat": "309.56 pts",
-          "detail": "Hebrew Hammer took the firefight 192.30\u2013117.26."
+          "detail": "Hebrew Hammer survived the track meet 192.30\u2013117.26."
         },
         {
           "key": "bench",
-          "title": "Left on Break",
+          "title": "Left on Smoke Break",
           "team": "Malone Wilson Flynn & Co",
           "stat": "31.4 pts",
-          "detail": "Left Bryce Young (QB) on the bench."
+          "detail": "Left Bryce Young (QB) rotting on the pine."
         }
       ],
       "matchups": [
@@ -1214,7 +1412,7 @@
           "margin": 75.04,
           "combined": 309.56,
           "upset_delta": 0,
-          "triage_note": "Code Blue blowout by 75.04 pts: Kenneth Walker III (32.6) led Hebrew Hammer as they clocked Eliquis Hurts."
+          "triage_note": "Call the coroner: Hebrew Hammer clocked out Eliquis Hurts by 75.04 pts. Kenneth Walker III (32.6) alone looked like a varsity squad scrimmaging a JV bench."
         },
         {
           "matchup_id": 4,
@@ -1329,7 +1527,7 @@
           "margin": 41.68,
           "combined": 280.12,
           "upset_delta": 0,
-          "triage_note": "Ashton Jeanty (29.7) paced Glock Purdy & Mac-10 past CeeDee's Nutz by 41.68 pts, erasing Lamar Jackson's 25.0."
+          "triage_note": "Clinical beatdown: Glock Purdy & Mac-10 steamrolled CeeDee's Nutz by 41.68 pts behind Ashton Jeanty (29.7)."
         },
         {
           "matchup_id": 2,
@@ -1444,7 +1642,7 @@
           "margin": 35.2,
           "combined": 272.16,
           "upset_delta": 0,
-          "triage_note": "Bijan Robinson (27.3) paced Bijan Mustard past Dislocated Dreams by 35.20 pts, erasing Zay Flowers's 23.5."
+          "triage_note": "Clinical beatdown: Bijan Mustard steamrolled Dislocated Dreams by 35.20 pts behind Bijan Robinson (27.3)."
         },
         {
           "matchup_id": 6,
@@ -1559,7 +1757,7 @@
           "margin": 39.92,
           "combined": 260.64,
           "upset_delta": 0,
-          "triage_note": "Derrick Henry (34.8) paced Justin the Nix of time past Underdog vikings by 39.92 pts, erasing Jahmyr Gibbs's 31.1."
+          "triage_note": "Clinical beatdown: Justin the Nix of time steamrolled Underdog vikings by 39.92 pts behind Derrick Henry (34.8)."
         },
         {
           "matchup_id": 3,
@@ -1674,7 +1872,7 @@
           "margin": 33.04,
           "combined": 251.4,
           "upset_delta": 0,
-          "triage_note": "Jalen Hurts (24.7) paced AHHHLLL past BTFU by 33.04 pts, erasing Josh Allen's 35.7."
+          "triage_note": "Jalen Hurts (24.7) paced AHHHLLL past BTFU by 33.04 pts, completely wasting Josh Allen (35.7) for BTFU."
         },
         {
           "matchup_id": 5,
@@ -1789,7 +1987,7 @@
           "margin": 54.22,
           "combined": 225.26,
           "upset_delta": 0,
-          "triage_note": "Isaiah Likely (27.8) paced Malone Wilson Flynn & Co past Maye's Way by 54.22 pts."
+          "triage_note": "Isaiah Likely (27.8) paced Malone Wilson Flynn & Co past Maye's Way by 54.22 pts with zero drama."
         }
       ],
       "scoring_bars": [
@@ -1918,6 +2116,7 @@
           "pa": 117.26,
           "all_play": "11-0",
           "all_play_pct": 100.0,
+          "luck_delta": 0.0,
           "rank": 1
         },
         {
@@ -1935,6 +2134,7 @@
           "pa": 119.22,
           "all_play": "10-1",
           "all_play_pct": 90.91,
+          "luck_delta": 9.09,
           "rank": 2
         },
         {
@@ -1952,6 +2152,7 @@
           "pa": 118.48,
           "all_play": "9-2",
           "all_play_pct": 81.82,
+          "luck_delta": 18.18,
           "rank": 3
         },
         {
@@ -1969,6 +2170,7 @@
           "pa": 110.36,
           "all_play": "8-3",
           "all_play_pct": 72.73,
+          "luck_delta": 27.27,
           "rank": 4
         },
         {
@@ -1986,6 +2188,7 @@
           "pa": 109.18,
           "all_play": "7-4",
           "all_play_pct": 63.64,
+          "luck_delta": 36.36,
           "rank": 5
         },
         {
@@ -2003,6 +2206,7 @@
           "pa": 85.52,
           "all_play": "6-5",
           "all_play_pct": 54.55,
+          "luck_delta": 45.45,
           "rank": 6
         },
         {
@@ -2020,6 +2224,7 @@
           "pa": 160.9,
           "all_play": "5-6",
           "all_play_pct": 45.45,
+          "luck_delta": -45.45,
           "rank": 7
         },
         {
@@ -2037,6 +2242,7 @@
           "pa": 153.68,
           "all_play": "4-7",
           "all_play_pct": 36.36,
+          "luck_delta": -36.36,
           "rank": 8
         },
         {
@@ -2054,6 +2260,7 @@
           "pa": 192.3,
           "all_play": "3-8",
           "all_play_pct": 27.27,
+          "luck_delta": -27.27,
           "rank": 9
         },
         {
@@ -2071,6 +2278,7 @@
           "pa": 150.28,
           "all_play": "2-9",
           "all_play_pct": 18.18,
+          "luck_delta": -18.18,
           "rank": 10
         },
         {
@@ -2088,6 +2296,7 @@
           "pa": 142.22,
           "all_play": "1-10",
           "all_play_pct": 9.09,
+          "luck_delta": -9.09,
           "rank": 11
         },
         {
@@ -2105,6 +2314,7 @@
           "pa": 139.74,
           "all_play": "0-11",
           "all_play_pct": 0.0,
+          "luck_delta": 0.0,
           "rank": 12
         }
       ],
@@ -2204,19 +2414,37 @@
       "dispatch_date": "Sep 22, 2026",
       "theme": {
         "id": "harvest-moon",
+        "motif": "moon",
         "holiday": "Harvest Moon",
         "edition": "Harvest Moon Triage",
         "accent": "#D97706",
         "accent_soft": "rgba(217, 119, 6, 0.16)",
-        "tagline": "Full moon over the trauma ward \u2014 weird bounce-backs and early panic."
+        "tagline": "Full moon over the trauma ward \u2014 fraudulent Week 1 hype just collided with reality."
       },
       "headline": "Tier 1 Trauma: Harvest Moon Triage",
-      "deck": "CeeDee's Nutz eclipsed Dislocated Dreams for 164.18 points to pace Week 2, while Bijan Mustard survived a 118.08\u2013108.30 nail-biter over Eliquis Hurts in Tier 1 Dynasty.",
+      "deck": "CeeDee's Nutz eclipsed Dislocated Dreams for 164.18 points while Glock Purdy & Mac-10 flatlined at 85.14, and Bijan Mustard robbed Eliquis Hurts by 9.78 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 2: HARVEST MOON TRIAGE \ud83d\udea8\n\ud83d\udd25 Apex Howler: CeeDee's Nutz (164.18 pts)\n\ud83d\udc80 Total Eclipse: Glock Purdy & Mac-10 (85.14 pts)\n\ud83d\udd2a Silver Bullet Escape: Bijan Mustard over Eliquis Hurts by 9.78\n\ud83e\ude91 Left in the Dark: Hebrew Hammer benched CAR D/ST (27.0)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=2",
       "ward_headline": "Justin the Nix of time Sets the Pace in Harvest Moon Triage",
       "ward_paragraphs": [
-        "Coming out of Week 2 (Harvest Moon), Justin the Nix of time (2-0, W2) and Malone Wilson Flynn & Co (2-0, W2) sit atop the Tier 1 standings. At the cutoff, CeeDee's Nutz (1-1) holds the #6 seed \u2014 locked in a dead-heat tiebreaker battle with Glock Purdy & Mac-10 with 12 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 120.30 median while Glock Purdy & Mac-10 hit the week's floor at 85.14. Individual fireworks were headlined by Josh Allen (40.8 pts for BTFU) and Jaxon Smith-Njigba (38.0 pts for Malone Wilson Flynn & Co)."
+        "Out of Week 2 (Harvest Moon), Justin the Nix of time (2-0, W2) and Malone Wilson Flynn & Co (2-0, W2) own the top of the ward. At the cutoff, CeeDee's Nutz (1-1) sits #6 \u2014 clinging to a PF tiebreaker over Glock Purdy & Mac-10 with 12 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 120.30 median while Glock Purdy & Mac-10 dragged the league floor down to 85.14 and BTFU (0-2) anchored 12th place. Weekly MVP fireworks belonged to Josh Allen (40.8 pts for BTFU) and Jaxon Smith-Njigba (38.0 pts for Malone Wilson Flynn & Co)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "1-1",
+          "all_play": "2-20",
+          "luck_delta": 40.91,
+          "roast": "Maye's Way (1-1) is riding +40.9% schedule luck over their 2-20 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "Underdog vikings",
+          "record": "0-2",
+          "all_play": "9-13",
+          "luck_delta": -40.91,
+          "roast": "Underdog vikings (0-2) owns a 9-13 All-Play mark (-40.9% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 164.18,
         "high_team": "CeeDee's Nutz",
@@ -2290,35 +2518,35 @@
           "title": "Apex Howler",
           "team": "CeeDee's Nutz",
           "stat": "164.18 pts",
-          "detail": "+37.12 above league average (127.06)."
+          "detail": "Lapped the field by +37.12 over the 127.06 league average."
         },
         {
           "key": "low",
-          "title": "Lunar Eclipse",
+          "title": "Total Eclipse",
           "team": "Glock Purdy & Mac-10",
           "stat": "85.14 pts",
-          "detail": "41.92 pts below the Week 2 mean."
+          "detail": "Cratered 41.92 pts below the Week 2 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Silver Bullet Escape",
           "team": "Bijan Mustard",
           "stat": "+9.78 pts",
-          "detail": "Edged Eliquis Hurts (118.08\u2013108.30)."
+          "detail": "Robbed Eliquis Hurts (118.08\u2013108.30)."
         },
         {
           "key": "upset",
           "title": "Full Moon Madness",
           "team": "AHHHLLL",
           "stat": "#5 over #1",
-          "detail": "Knocked off Hebrew Hammer 153.02\u2013122.52."
+          "detail": "Humiliated Hebrew Hammer 153.02\u2013122.52."
         },
         {
           "key": "bench",
           "title": "Left in the Dark",
           "team": "Hebrew Hammer",
           "stat": "27.0 pts",
-          "detail": "Left CAR D/ST (DEF) on the bench in a loss."
+          "detail": "Left CAR D/ST (DEF) rotting on the pine in an L."
         }
       ],
       "matchups": [
@@ -2435,7 +2663,7 @@
           "margin": 50.84,
           "combined": 277.52,
           "upset_delta": -1,
-          "triage_note": "CeeDee Lamb (31.3) paced CeeDee's Nutz past Dislocated Dreams by 50.84 pts."
+          "triage_note": "Clinical beatdown: CeeDee's Nutz torched Dislocated Dreams by 50.84 pts behind CeeDee Lamb (31.3)."
         },
         {
           "matchup_id": 6,
@@ -2550,7 +2778,7 @@
           "margin": 13.26,
           "combined": 314.06,
           "upset_delta": -4,
-          "triage_note": "Shootout of the week (314.06 combined): Jaxon Smith-Njigba (38.0) helped Malone Wilson Flynn & Co outgun Davante Adams (35.5) by 13.26 pts."
+          "triage_note": "Absolute firefight (314.06 combined): Malone Wilson Flynn & Co outgunned Underdog vikings by 13.26 \u2014 Underdog vikings scored 150.40 and STILL ate an L."
         },
         {
           "matchup_id": 5,
@@ -2665,7 +2893,7 @@
           "margin": 70.46,
           "combined": 240.74,
           "upset_delta": 2,
-          "triage_note": "Code Blue blowout by 70.46 pts: Jared Goff (29.8) led Justin the Nix of time as they eclipsed Glock Purdy & Mac-10."
+          "triage_note": "Call the coroner: Justin the Nix of time eclipsed Glock Purdy & Mac-10 by 70.46 pts. Jared Goff (29.8) alone looked like a varsity squad scrimmaging a JV bench."
         },
         {
           "matchup_id": 2,
@@ -2780,7 +3008,7 @@
           "margin": 30.5,
           "combined": 275.54,
           "upset_delta": 4,
-          "triage_note": "Bench malpractice watch: Hebrew Hammer left CAR D/ST (27.0 pts) on the pine as AHHHLLL took it by 30.50."
+          "triage_note": "Fire the coaching staff: Hebrew Hammer left CAR D/ST (27.0 pts) rotting on the bench and lost to AHHHLLL by 30.50."
         },
         {
           "matchup_id": 1,
@@ -2895,7 +3123,7 @@
           "margin": 9.78,
           "combined": 226.38,
           "upset_delta": -6,
-          "triage_note": "Ugly survival: Bijan Mustard won by 9.78 despite scoring 8.98 below the league average."
+          "triage_note": "Fraud-watch victory: Bijan Mustard limped to 118.08 and got bailed out by Eliquis Hurts's 108.30 no-show."
         },
         {
           "matchup_id": 4,
@@ -3010,7 +3238,7 @@
           "margin": 13.58,
           "combined": 190.5,
           "upset_delta": 1,
-          "triage_note": "Bench malpractice watch: BTFU left Rashod Bateman (18.3 pts) on the pine as Maye's Way took it by 13.58."
+          "triage_note": "Fire the coaching staff: BTFU left Rashod Bateman (18.3 pts) rotting on the bench and lost to Maye's Way by 13.58."
         }
       ],
       "scoring_bars": [
@@ -3139,6 +3367,7 @@
           "pa": 195.5,
           "all_play": "17-5",
           "all_play_pct": 77.27,
+          "luck_delta": 22.73,
           "rank": 1
         },
         {
@@ -3156,6 +3385,7 @@
           "pa": 235.92,
           "all_play": "16-6",
           "all_play_pct": 72.73,
+          "luck_delta": 27.27,
           "rank": 2
         },
         {
@@ -3173,6 +3403,7 @@
           "pa": 231.7,
           "all_play": "15-7",
           "all_play_pct": 68.18,
+          "luck_delta": 31.82,
           "rank": 3
         },
         {
@@ -3190,6 +3421,7 @@
           "pa": 226.78,
           "all_play": "14-8",
           "all_play_pct": 63.64,
+          "luck_delta": 36.36,
           "rank": 4
         },
         {
@@ -3207,6 +3439,7 @@
           "pa": 270.28,
           "all_play": "17-5",
           "all_play_pct": 77.27,
+          "luck_delta": -27.27,
           "rank": 5
         },
         {
@@ -3224,6 +3457,7 @@
           "pa": 274.24,
           "all_play": "16-6",
           "all_play_pct": 72.73,
+          "luck_delta": -22.73,
           "rank": 6
         },
         {
@@ -3241,6 +3475,7 @@
           "pa": 274.82,
           "all_play": "10-12",
           "all_play_pct": 45.45,
+          "luck_delta": 4.55,
           "rank": 7
         },
         {
@@ -3258,6 +3493,7 @@
           "pa": 228.2,
           "all_play": "2-20",
           "all_play_pct": 9.09,
+          "luck_delta": 40.91,
           "rank": 8
         },
         {
@@ -3275,6 +3511,7 @@
           "pa": 313.94,
           "all_play": "9-13",
           "all_play_pct": 40.91,
+          "luck_delta": -40.91,
           "rank": 9
         },
         {
@@ -3292,6 +3529,7 @@
           "pa": 317.86,
           "all_play": "8-14",
           "all_play_pct": 36.36,
+          "luck_delta": -36.36,
           "rank": 10
         },
         {
@@ -3309,6 +3547,7 @@
           "pa": 310.38,
           "all_play": "6-16",
           "all_play_pct": 27.27,
+          "luck_delta": -27.27,
           "rank": 11
         },
         {
@@ -3326,6 +3565,7 @@
           "pa": 244.26,
           "all_play": "2-20",
           "all_play_pct": 9.09,
+          "luck_delta": -9.09,
           "rank": 12
         }
       ],
@@ -3425,19 +3665,37 @@
       "dispatch_date": "Sep 29, 2026",
       "theme": {
         "id": "equinox",
+        "motif": "leaf",
         "holiday": "Autumn Equinox",
         "edition": "Equinox Flatline",
         "accent": "#C26D2D",
         "accent_soft": "rgba(194, 109, 45, 0.16)",
-        "tagline": "Equal day, equal night \u2014 wildly unequal fantasy point totals."
+        "tagline": "Equal day, equal night \u2014 violently unequal fantasy rosters."
       },
       "headline": "Tier 1 Trauma: Equinox Flatline",
-      "deck": "Underdog vikings froze out BTFU for 171.28 points to pace Week 3, while CeeDee's Nutz survived a 148.12\u2013147.34 nail-biter over Bijan Mustard in Tier 1 Dynasty.",
+      "deck": "Underdog vikings froze out BTFU for 171.28 points while Dislocated Dreams flatlined at 85.08, and CeeDee's Nutz robbed Bijan Mustard by 0.78 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 3: EQUINOX FLATLINE \ud83d\udea8\n\ud83d\udd25 Peak Harvest: Underdog vikings (171.28 pts)\n\ud83d\udc80 Early Frostbite: Dislocated Dreams (85.08 pts)\n\ud83d\udd2a Razor Balance: CeeDee's Nutz over Bijan Mustard by 0.78\n\ud83e\ude91 Raked to the Curb: BTFU benched Case Keenum (24.5)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=3",
       "ward_headline": "Justin the Nix of time Sets the Pace in Equinox Flatline",
       "ward_paragraphs": [
-        "Coming out of Week 3 (Autumn Equinox), Justin the Nix of time (3-0, W3) and Malone Wilson Flynn & Co (3-0, W3) sit atop the Tier 1 standings. At the cutoff, AHHHLLL (2-1) holds the #6 seed \u2014 one game ahead of the #7 bubble with 11 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 140.52 median while Dislocated Dreams hit the week's floor at 85.08. Individual fireworks were headlined by Jahmyr Gibbs (37.9 pts for Underdog vikings) and Bijan Robinson (34.3 pts for Bijan Mustard)."
+        "Out of Week 3 (Autumn Equinox), Justin the Nix of time (3-0, W3) and Malone Wilson Flynn & Co (3-0, W3) own the top of the ward. At the cutoff, AHHHLLL (2-1) sits #6 \u2014 just one game ahead of the #7 bubble with 11 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 140.52 median while Dislocated Dreams dragged the league floor down to 85.08 and Dislocated Dreams (0-3) anchored 12th place. Weekly MVP fireworks belonged to Jahmyr Gibbs (37.9 pts for Underdog vikings) and Bijan Robinson (34.3 pts for Bijan Mustard)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Malone Wilson Flynn & Co",
+          "record": "3-0",
+          "all_play": "23-10",
+          "luck_delta": 30.3,
+          "roast": "Malone Wilson Flynn & Co (3-0) is riding +30.3% schedule luck over their 23-10 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "Underdog vikings",
+          "record": "1-2",
+          "all_play": "20-13",
+          "luck_delta": -27.28,
+          "roast": "Underdog vikings (1-2) owns a 20-13 All-Play mark (-27.3% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 171.28,
         "high_team": "Underdog vikings",
@@ -3508,38 +3766,38 @@
       "awards": [
         {
           "key": "high",
-          "title": "Peak Season",
+          "title": "Peak Harvest",
           "team": "Underdog vikings",
           "stat": "171.28 pts",
-          "detail": "+39.61 above league average (131.67)."
+          "detail": "Lapped the field by +39.61 over the 131.67 league average."
         },
         {
           "key": "low",
-          "title": "Early Frost",
+          "title": "Early Frostbite",
           "team": "Dislocated Dreams",
           "stat": "85.08 pts",
-          "detail": "46.59 pts below the Week 3 mean."
+          "detail": "Cratered 46.59 pts below the Week 3 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Razor Balance",
           "team": "CeeDee's Nutz",
           "stat": "+0.78 pts",
-          "detail": "Edged Bijan Mustard (148.12\u2013147.34)."
+          "detail": "Robbed Bijan Mustard (148.12\u2013147.34)."
         },
         {
           "key": "upset",
-          "title": "Seasonal Shift",
+          "title": "Seasonal Ambush",
           "team": "Eliquis Hurts",
           "stat": "#11 over #3",
-          "detail": "Knocked off AHHHLLL 123.80\u2013122.86."
+          "detail": "Humiliated AHHHLLL 123.80\u2013122.86."
         },
         {
           "key": "bench",
-          "title": "Fallen Leaves",
+          "title": "Raked to the Curb",
           "team": "BTFU",
           "stat": "24.5 pts",
-          "detail": "Left Case Keenum (QB) on the bench in a loss."
+          "detail": "Left Case Keenum (QB) rotting on the pine in an L."
         }
       ],
       "matchups": [
@@ -3656,7 +3914,7 @@
           "margin": 33.2,
           "combined": 309.36,
           "upset_delta": -3,
-          "triage_note": "Bench malpractice watch: BTFU left Case Keenum (24.5 pts) on the pine as Underdog vikings took it by 33.20."
+          "triage_note": "Jahmyr Gibbs (37.9) paced Underdog vikings past BTFU by 33.20 pts, completely wasting Drake London (23.9) for BTFU."
         },
         {
           "matchup_id": 4,
@@ -3771,7 +4029,7 @@
           "margin": 63.72,
           "combined": 233.88,
           "upset_delta": -9,
-          "triage_note": "Code Blue blowout by 63.72 pts: Brock Bowers (27.6) led Justin the Nix of time as they froze out Dislocated Dreams."
+          "triage_note": "Mercy-rule massacre (+63.72): Justin the Nix of time dropped 148.80 behind Brock Bowers (27.6) and sent Dislocated Dreams straight to the morgue."
         },
         {
           "matchup_id": 2,
@@ -3886,7 +4144,7 @@
           "margin": 0.78,
           "combined": 295.46,
           "upset_delta": 2,
-          "triage_note": "Razor-thin escape by 0.78 pts: CeeDee's Nutz edged Bijan Mustard behind George Kittle's 26.2 pts."
+          "triage_note": "Peak bench malpractice: Bijan Mustard benched Jordan Love (18.5) and handed CeeDee's Nutz a 0.78-point gift."
         },
         {
           "matchup_id": 6,
@@ -4001,7 +4259,7 @@
           "margin": 2.84,
           "combined": 288.76,
           "upset_delta": -5,
-          "triage_note": "Razor-thin escape by 2.84 pts: Malone Wilson Flynn & Co edged Glock Purdy & Mac-10 behind Jaxon Smith-Njigba's 30.4 pts."
+          "triage_note": "Peak bench malpractice: Glock Purdy & Mac-10 benched Kenyon Sadiq (23.5) and handed Malone Wilson Flynn & Co a 2.84-point gift."
         },
         {
           "matchup_id": 1,
@@ -4116,7 +4374,7 @@
           "margin": 0.94,
           "combined": 246.66,
           "upset_delta": 8,
-          "triage_note": "Razor-thin escape by 0.94 pts: Eliquis Hurts edged AHHHLLL behind Harold Fannin Jr.'s 24.1 pts."
+          "triage_note": "Daylight robbery by 0.94 pts: Eliquis Hurts edged AHHHLLL behind Harold Fannin Jr. (24.1), leaving AHHHLLL staring at the stat-correction page."
         },
         {
           "matchup_id": 3,
@@ -4231,7 +4489,7 @@
           "margin": 17.44,
           "combined": 205.88,
           "upset_delta": -3,
-          "triage_note": "Bench malpractice watch: Maye's Way left Kalif Raymond (18.0 pts) on the pine as Hebrew Hammer took it by 17.44."
+          "triage_note": "Fire the coaching staff: Maye's Way left Kalif Raymond (18.0 pts) rotting on the bench and lost to Hebrew Hammer by 17.44."
         }
       ],
       "scoring_bars": [
@@ -4360,6 +4618,7 @@
           "pa": 280.58,
           "all_play": "27-6",
           "all_play_pct": 81.82,
+          "luck_delta": 18.18,
           "rank": 1
         },
         {
@@ -4377,6 +4636,7 @@
           "pa": 378.88,
           "all_play": "23-10",
           "all_play_pct": 69.7,
+          "luck_delta": 30.3,
           "rank": 2
         },
         {
@@ -4394,6 +4654,7 @@
           "pa": 421.58,
           "all_play": "25-8",
           "all_play_pct": 75.76,
+          "luck_delta": -9.09,
           "rank": 3
         },
         {
@@ -4411,6 +4672,7 @@
           "pa": 364.5,
           "all_play": "19-14",
           "all_play_pct": 57.58,
+          "luck_delta": 9.09,
           "rank": 4
         },
         {
@@ -4428,6 +4690,7 @@
           "pa": 374.9,
           "all_play": "22-11",
           "all_play_pct": 66.67,
+          "luck_delta": 0.0,
           "rank": 5
         },
         {
@@ -4445,6 +4708,7 @@
           "pa": 355.5,
           "all_play": "18-15",
           "all_play_pct": 54.55,
+          "luck_delta": 12.12,
           "rank": 6
         },
         {
@@ -4462,6 +4726,7 @@
           "pa": 452.02,
           "all_play": "20-13",
           "all_play_pct": 60.61,
+          "luck_delta": -27.28,
           "rank": 7
         },
         {
@@ -4479,6 +4744,7 @@
           "pa": 420.62,
           "all_play": "16-17",
           "all_play_pct": 48.48,
+          "luck_delta": -15.15,
           "rank": 8
         },
         {
@@ -4496,6 +4762,7 @@
           "pa": 433.24,
           "all_play": "10-23",
           "all_play_pct": 30.3,
+          "luck_delta": 3.03,
           "rank": 9
         },
         {
@@ -4513,6 +4780,7 @@
           "pa": 339.86,
           "all_play": "3-30",
           "all_play_pct": 9.09,
+          "luck_delta": 24.24,
           "rank": 10
         },
         {
@@ -4530,6 +4798,7 @@
           "pa": 415.54,
           "all_play": "7-26",
           "all_play_pct": 21.21,
+          "luck_delta": -21.21,
           "rank": 11
         },
         {
@@ -4547,6 +4816,7 @@
           "pa": 466.66,
           "all_play": "8-25",
           "all_play_pct": 24.24,
+          "luck_delta": -24.24,
           "rank": 12
         }
       ],
@@ -4646,19 +4916,37 @@
       "dispatch_date": "Oct 06, 2026",
       "theme": {
         "id": "oktoberfest",
+        "motif": "stein",
         "holiday": "Oktoberfest",
         "edition": "Oktoberfest Trauma Ward",
         "accent": "#CA8A04",
         "accent_soft": "rgba(202, 138, 4, 0.16)",
-        "tagline": "Steins raised, lineups toasted, and a few managers nursing heavy hangovers."
+        "tagline": "Steins raised, frauds exposed, and half the league waking up with a lineup hangover."
       },
       "headline": "Tier 1 Trauma: Oktoberfest Trauma Ward",
-      "deck": "Bijan Mustard toasted Justin the Nix of time for 176.54 points to pace Week 4, while Maye's Way survived a 134.58\u2013131.52 nail-biter over AHHHLLL in Tier 1 Dynasty.",
+      "deck": "Bijan Mustard toasted Justin the Nix of time for 176.54 points while BTFU flatlined at 85.34, and Maye's Way robbed AHHHLLL by 3.06 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 4: OKTOBERFEST TRAUMA WARD \ud83d\udea8\n\ud83d\udd25 King of the Beer Hall: Bijan Mustard (176.54 pts)\n\ud83d\udc80 Warm Flat Keg: BTFU (85.34 pts)\n\ud83d\udd2a Last Call Robbery: Maye's Way over AHHHLLL by 3.06\n\ud83e\ude91 Locked in the Cellar: Eliquis Hurts benched Nico Collins (27.3)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=4",
       "ward_headline": "Justin the Nix of time Sets the Pace in Oktoberfest Trauma Ward",
       "ward_paragraphs": [
-        "Coming out of Week 4 (Oktoberfest), Justin the Nix of time (3-1, L1) and Bijan Mustard (3-1, W1) sit atop the Tier 1 standings. At the cutoff, AHHHLLL (2-2) holds the #6 seed \u2014 locked in a dead-heat tiebreaker battle with Glock Purdy & Mac-10 with 10 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 134.74 median while BTFU hit the week's floor at 85.34. Individual fireworks were headlined by Tetairoa McMillan (38.2 pts for Dislocated Dreams) and CeeDee Lamb (32.8 pts for CeeDee's Nutz)."
+        "Out of Week 4 (Oktoberfest), Justin the Nix of time (3-1, L1) and Bijan Mustard (3-1, W1) own the top of the ward. At the cutoff, AHHHLLL (2-2) sits #6 \u2014 clinging to a PF tiebreaker over Glock Purdy & Mac-10 with 10 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 134.74 median while BTFU dragged the league floor down to 85.34 and BTFU (0-4) anchored 12th place. Weekly MVP fireworks belonged to Tetairoa McMillan (38.2 pts for Dislocated Dreams) and CeeDee Lamb (32.8 pts for CeeDee's Nutz)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "2-2",
+          "all_play": "8-36",
+          "luck_delta": 31.82,
+          "roast": "Maye's Way (2-2) is riding +31.8% schedule luck over their 8-36 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "Underdog vikings",
+          "record": "1-3",
+          "all_play": "22-22",
+          "luck_delta": -25.0,
+          "roast": "Underdog vikings (1-3) owns a 22-22 All-Play mark (-25.0% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 176.54,
         "high_team": "Bijan Mustard",
@@ -4732,35 +5020,35 @@
           "title": "King of the Beer Hall",
           "team": "Bijan Mustard",
           "stat": "176.54 pts",
-          "detail": "+44.21 above league average (132.33)."
+          "detail": "Lapped the field by +44.21 over the 132.33 league average."
         },
         {
           "key": "low",
-          "title": "Flat Keg",
+          "title": "Warm Flat Keg",
           "team": "BTFU",
           "stat": "85.34 pts",
-          "detail": "46.99 pts below the Week 4 mean."
+          "detail": "Cratered 46.99 pts below the Week 4 mean. Check for a pulse."
         },
         {
           "key": "close",
-          "title": "Last Call Escape",
+          "title": "Last Call Robbery",
           "team": "Maye's Way",
           "stat": "+3.06 pts",
-          "detail": "Edged AHHHLLL (134.58\u2013131.52)."
+          "detail": "Robbed AHHHLLL (134.58\u2013131.52)."
         },
         {
           "key": "upset",
           "title": "Bavarian Ambush",
           "team": "Dislocated Dreams",
           "stat": "#12 over #2",
-          "detail": "Knocked off Malone Wilson Flynn & Co 140.76\u201391.90."
+          "detail": "Humiliated Malone Wilson Flynn & Co 140.76\u201391.90."
         },
         {
           "key": "bench",
-          "title": "Untapped Reserve",
+          "title": "Locked in the Cellar",
           "team": "Eliquis Hurts",
           "stat": "27.3 pts",
-          "detail": "Left Nico Collins (WR) on the bench in a loss."
+          "detail": "Left Nico Collins (WR) rotting on the pine in an L."
         }
       ],
       "matchups": [
@@ -4877,7 +5165,7 @@
           "margin": 32.6,
           "combined": 320.48,
           "upset_delta": 4,
-          "triage_note": "Bench malpractice watch: Justin the Nix of time left Emanuel Wilson (25.5 pts) on the pine as Bijan Mustard took it by 32.60."
+          "triage_note": "Shootout carnage (320.48 total): Bijan Robinson (27.2) lifted Bijan Mustard past T.J. Hockenson (24.9) by 32.60. Brutal beat for Justin the Nix of time."
         },
         {
           "matchup_id": 1,
@@ -4992,7 +5280,7 @@
           "margin": 24.92,
           "combined": 279.48,
           "upset_delta": -6,
-          "triage_note": "Bench malpractice watch: Eliquis Hurts left Nico Collins (27.3 pts) on the pine as CeeDee's Nutz took it by 24.92."
+          "triage_note": "Peak bench malpractice: Eliquis Hurts benched Nico Collins (27.3) and handed CeeDee's Nutz a 24.92-point gift."
         },
         {
           "matchup_id": 4,
@@ -5107,7 +5395,7 @@
           "margin": 30.96,
           "combined": 269.0,
           "upset_delta": -3,
-          "triage_note": "Kenneth Walker III (30.4) paced Hebrew Hammer past Underdog vikings by 30.96 pts."
+          "triage_note": "Kenneth Walker III (30.4) paced Hebrew Hammer past Underdog vikings by 30.96 pts with zero drama."
         },
         {
           "matchup_id": 5,
@@ -5222,7 +5510,7 @@
           "margin": 48.86,
           "combined": 232.66,
           "upset_delta": 10,
-          "triage_note": "Tetairoa McMillan (38.2) paced Dislocated Dreams past Malone Wilson Flynn & Co by 48.86 pts."
+          "triage_note": "Clinical beatdown: Dislocated Dreams crushed Malone Wilson Flynn & Co by 48.86 pts behind Tetairoa McMillan (38.2)."
         },
         {
           "matchup_id": 6,
@@ -5337,7 +5625,7 @@
           "margin": 49.56,
           "combined": 220.24,
           "upset_delta": -3,
-          "triage_note": "Javonte Williams (28.8) paced Glock Purdy & Mac-10 past BTFU by 49.56 pts."
+          "triage_note": "Javonte Williams (28.8) paced Glock Purdy & Mac-10 past BTFU by 49.56 pts with zero drama."
         },
         {
           "matchup_id": 2,
@@ -5452,7 +5740,7 @@
           "margin": 3.06,
           "combined": 266.1,
           "upset_delta": 4,
-          "triage_note": "Razor-thin escape by 3.06 pts: Maye's Way outlasted AHHHLLL behind Drake Maye's 26.2 pts."
+          "triage_note": "Fire the coaching staff: AHHHLLL left C.J. Stroud (23.1 pts) rotting on the bench and lost to Maye's Way by 3.06."
         }
       ],
       "scoring_bars": [
@@ -5581,6 +5869,7 @@
           "pa": 457.12,
           "all_play": "35-9",
           "all_play_pct": 79.55,
+          "luck_delta": -4.55,
           "rank": 1
         },
         {
@@ -5598,6 +5887,7 @@
           "pa": 518.84,
           "all_play": "33-11",
           "all_play_pct": 75.0,
+          "luck_delta": 0.0,
           "rank": 2
         },
         {
@@ -5615,6 +5905,7 @@
           "pa": 548.86,
           "all_play": "35-9",
           "all_play_pct": 79.55,
+          "luck_delta": -4.55,
           "rank": 3
         },
         {
@@ -5632,6 +5923,7 @@
           "pa": 483.52,
           "all_play": "28-16",
           "all_play_pct": 63.64,
+          "luck_delta": 11.36,
           "rank": 4
         },
         {
@@ -5649,6 +5941,7 @@
           "pa": 519.64,
           "all_play": "24-20",
           "all_play_pct": 54.55,
+          "luck_delta": 20.45,
           "rank": 5
         },
         {
@@ -5666,6 +5959,7 @@
           "pa": 490.08,
           "all_play": "22-22",
           "all_play_pct": 50.0,
+          "luck_delta": 0.0,
           "rank": 6
         },
         {
@@ -5683,6 +5977,7 @@
           "pa": 505.96,
           "all_play": "22-22",
           "all_play_pct": 50.0,
+          "luck_delta": 0.0,
           "rank": 7
         },
         {
@@ -5700,6 +5995,7 @@
           "pa": 471.38,
           "all_play": "8-36",
           "all_play_pct": 18.18,
+          "luck_delta": 31.82,
           "rank": 8
         },
         {
@@ -5717,6 +6013,7 @@
           "pa": 602.0,
           "all_play": "22-22",
           "all_play_pct": 50.0,
+          "luck_delta": -25.0,
           "rank": 9
         },
         {
@@ -5734,6 +6031,7 @@
           "pa": 585.44,
           "all_play": "13-31",
           "all_play_pct": 29.55,
+          "luck_delta": -4.55,
           "rank": 10
         },
         {
@@ -5751,6 +6049,7 @@
           "pa": 558.56,
           "all_play": "15-29",
           "all_play_pct": 34.09,
+          "luck_delta": -9.09,
           "rank": 11
         },
         {
@@ -5768,6 +6067,7 @@
           "pa": 550.44,
           "all_play": "7-37",
           "all_play_pct": 15.91,
+          "luck_delta": -15.91,
           "rank": 12
         }
       ],
@@ -5867,19 +6167,37 @@
       "dispatch_date": "Oct 13, 2026",
       "theme": {
         "id": "indigenous-peoples",
+        "motif": "compass",
         "holiday": "October Long Weekend",
         "edition": "October Triage Expedition",
         "accent": "#B45309",
         "accent_soft": "rgba(180, 83, 9, 0.16)",
-        "tagline": "Uncharted territory as bye weeks begin and contender tiers separate."
+        "tagline": "Bye weeks have arrived \u2014 and so have the first shameless roster excuses."
       },
       "headline": "Tier 1 Trauma: October Triage Expedition",
-      "deck": "Malone Wilson Flynn & Co charted past Bijan Mustard for 206.76 points to pace Week 5, while Hebrew Hammer survived a 168.04\u2013121.98 nail-biter over Glock Purdy & Mac-10 in Tier 1 Dynasty.",
+      "deck": "Malone Wilson Flynn & Co charted past Bijan Mustard for 206.76 points while Eliquis Hurts flatlined at 69.72, and Hebrew Hammer robbed Glock Purdy & Mac-10 by 46.06 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 5: OCTOBER TRIAGE EXPEDITION \ud83d\udea8\n\ud83d\udd25 Trailblazer: Malone Wilson Flynn & Co (206.76 pts)\n\ud83d\udc80 Lost at Sea: Eliquis Hurts (69.72 pts)\n\ud83d\udd2a Photo Finish: Hebrew Hammer over Glock Purdy & Mac-10 by 46.06\n\ud83e\ude91 Stranded Cargo: CeeDee's Nutz benched Tyler Huntley (24.0)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=5",
       "ward_headline": "Justin the Nix of time Sets the Pace in October Triage Expedition",
       "ward_paragraphs": [
-        "Coming out of Week 5 (October Long Weekend), Justin the Nix of time (4-1, W1) and Malone Wilson Flynn & Co (4-1, W1) sit atop the Tier 1 standings. At the cutoff, Maye's Way (3-2) holds the #6 seed \u2014 one game ahead of the #7 bubble with 9 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 123.32 median while Eliquis Hurts hit the week's floor at 69.72. Individual fireworks were headlined by Drake Maye (39.5 pts for Maye's Way) and Jahmyr Gibbs (35.2 pts for Underdog vikings)."
+        "Out of Week 5 (October Long Weekend), Justin the Nix of time (4-1, W1) and Malone Wilson Flynn & Co (4-1, W1) own the top of the ward. At the cutoff, Maye's Way (3-2) sits #6 \u2014 just one game ahead of the #7 bubble with 9 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 123.32 median while Eliquis Hurts dragged the league floor down to 69.72 and Eliquis Hurts (1-4) anchored 12th place. Weekly MVP fireworks belonged to Drake Maye (39.5 pts for Maye's Way) and Jahmyr Gibbs (35.2 pts for Underdog vikings)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "3-2",
+          "all_play": "14-41",
+          "luck_delta": 34.55,
+          "roast": "Maye's Way (3-2) is riding +34.5% schedule luck over their 14-41 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "Underdog vikings",
+          "record": "2-3",
+          "all_play": "30-25",
+          "luck_delta": -14.55,
+          "roast": "Underdog vikings (2-3) owns a 30-25 All-Play mark (-14.6% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 206.76,
         "high_team": "Malone Wilson Flynn & Co",
@@ -5953,35 +6271,35 @@
           "title": "Trailblazer",
           "team": "Malone Wilson Flynn & Co",
           "stat": "206.76 pts",
-          "detail": "+75.36 above league average (131.40)."
+          "detail": "Lapped the field by +75.36 over the 131.40 league average."
         },
         {
           "key": "low",
           "title": "Lost at Sea",
           "team": "Eliquis Hurts",
           "stat": "69.72 pts",
-          "detail": "61.68 pts below the Week 5 mean."
+          "detail": "Cratered 61.68 pts below the Week 5 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Photo Finish",
           "team": "Hebrew Hammer",
           "stat": "+46.06 pts",
-          "detail": "Edged Glock Purdy & Mac-10 (168.04\u2013121.98)."
+          "detail": "Robbed Glock Purdy & Mac-10 (168.04\u2013121.98)."
         },
         {
           "key": "upset",
           "title": "Mutiny on Deck",
           "team": "Underdog vikings",
           "stat": "#9 over #6",
-          "detail": "Knocked off AHHHLLL 167.72\u201376.04."
+          "detail": "Humiliated AHHHLLL 167.72\u201376.04."
         },
         {
           "key": "bench",
           "title": "Stranded Cargo",
           "team": "CeeDee's Nutz",
           "stat": "24.0 pts",
-          "detail": "Left Tyler Huntley (QB) on the bench in a loss."
+          "detail": "Left Tyler Huntley (QB) rotting on the pine in an L."
         }
       ],
       "matchups": [
@@ -6098,7 +6416,7 @@
           "margin": 114.04,
           "combined": 299.48,
           "upset_delta": 3,
-          "triage_note": "Code Blue blowout by 114.04 pts: Isaiah Likely (32.4) led Malone Wilson Flynn & Co as they charted past Bijan Mustard."
+          "triage_note": "Public execution by 114.04 pts: Bijan Mustard posted 92.72 and had to sit there while Isaiah Likely (32.4) ran up the score for Malone Wilson Flynn & Co."
         },
         {
           "matchup_id": 2,
@@ -6213,7 +6531,7 @@
           "margin": 68.26,
           "combined": 275.26,
           "upset_delta": -2,
-          "triage_note": "Code Blue blowout by 68.26 pts: Jared Goff (28.9) led Justin the Nix of time as they charted past CeeDee's Nutz."
+          "triage_note": "Call the coroner: Justin the Nix of time charted past CeeDee's Nutz by 68.26 pts. Jared Goff (28.9) alone looked like a varsity squad scrimmaging a JV bench."
         },
         {
           "matchup_id": 5,
@@ -6328,7 +6646,7 @@
           "margin": 46.06,
           "combined": 290.02,
           "upset_delta": -3,
-          "triage_note": "Christian Watson (29.3) paced Hebrew Hammer past Glock Purdy & Mac-10 by 46.06 pts, erasing Mike Evans's 22.8."
+          "triage_note": "Christian Watson (29.3) paced Hebrew Hammer past Glock Purdy & Mac-10 by 46.06 pts, completely wasting Mike Evans (22.8) for Glock Purdy & Mac-10."
         },
         {
           "matchup_id": 3,
@@ -6443,7 +6761,7 @@
           "margin": 91.68,
           "combined": 243.76,
           "upset_delta": 3,
-          "triage_note": "Code Blue blowout by 91.68 pts: Jahmyr Gibbs (35.2) led Underdog vikings as they charted past AHHHLLL."
+          "triage_note": "Mercy-rule massacre (+91.68): Underdog vikings dropped 167.72 behind Jahmyr Gibbs (35.2) and sent AHHHLLL straight to the morgue."
         },
         {
           "matchup_id": 6,
@@ -6558,7 +6876,7 @@
           "margin": 55.4,
           "combined": 273.92,
           "upset_delta": 1,
-          "triage_note": "Jaylen Warren (33.8) paced BTFU past Dislocated Dreams by 55.40 pts, erasing Jayden Daniels's 32.3."
+          "triage_note": "Kids' table tussle: BTFU (1-4) knocked off Dislocated Dreams (1-4) by 55.40 \u2014 pure anti-tanking theater."
         },
         {
           "matchup_id": 1,
@@ -6673,7 +6991,7 @@
           "margin": 54.94,
           "combined": 194.38,
           "upset_delta": -2,
-          "triage_note": "Ugly survival: Maye's Way won by 54.94 despite scoring 6.74 below the league average."
+          "triage_note": "Cripple fight of the week: Maye's Way won with a hideous 124.66 only because Eliquis Hurts flatlined at 69.72. Nobody deserved a W here."
         }
       ],
       "scoring_bars": [
@@ -6802,6 +7120,7 @@
           "pa": 560.62,
           "all_play": "45-10",
           "all_play_pct": 81.82,
+          "luck_delta": -1.82,
           "rank": 1
         },
         {
@@ -6819,6 +7138,7 @@
           "pa": 612.36,
           "all_play": "35-20",
           "all_play_pct": 63.64,
+          "luck_delta": 16.36,
           "rank": 2
         },
         {
@@ -6836,6 +7156,7 @@
           "pa": 605.5,
           "all_play": "37-18",
           "all_play_pct": 67.27,
+          "luck_delta": 12.73,
           "rank": 3
         },
         {
@@ -6853,6 +7174,7 @@
           "pa": 725.6,
           "all_play": "35-20",
           "all_play_pct": 63.64,
+          "luck_delta": -3.64,
           "rank": 4
         },
         {
@@ -6870,6 +7192,7 @@
           "pa": 720.62,
           "all_play": "38-17",
           "all_play_pct": 69.09,
+          "luck_delta": -9.09,
           "rank": 5
         },
         {
@@ -6887,6 +7210,7 @@
           "pa": 541.1,
           "all_play": "14-41",
           "all_play_pct": 25.45,
+          "luck_delta": 34.55,
           "rank": 6
         },
         {
@@ -6904,6 +7228,7 @@
           "pa": 678.04,
           "all_play": "30-25",
           "all_play_pct": 54.55,
+          "luck_delta": -14.55,
           "rank": 7
         },
         {
@@ -6921,6 +7246,7 @@
           "pa": 674.0,
           "all_play": "27-28",
           "all_play_pct": 49.09,
+          "luck_delta": -9.09,
           "rank": 8
         },
         {
@@ -6938,6 +7264,7 @@
           "pa": 657.8,
           "all_play": "23-32",
           "all_play_pct": 41.82,
+          "luck_delta": -1.82,
           "rank": 9
         },
         {
@@ -6955,6 +7282,7 @@
           "pa": 659.7,
           "all_play": "14-41",
           "all_play_pct": 25.45,
+          "luck_delta": -5.45,
           "rank": 10
         },
         {
@@ -6972,6 +7300,7 @@
           "pa": 723.22,
           "all_play": "19-36",
           "all_play_pct": 34.55,
+          "luck_delta": -14.55,
           "rank": 11
         },
         {
@@ -6989,6 +7318,7 @@
           "pa": 710.1,
           "all_play": "13-42",
           "all_play_pct": 23.64,
+          "luck_delta": -3.64,
           "rank": 12
         }
       ],
@@ -7088,19 +7418,37 @@
       "dispatch_date": "Oct 20, 2026",
       "theme": {
         "id": "midseason-checkup",
+        "motif": "heart",
         "holiday": "Sweetest Day & Midseason",
         "edition": "Midseason Autopsy",
         "accent": "#E11D48",
         "accent_soft": "rgba(225, 29, 72, 0.16)",
-        "tagline": "Six weeks in: no more small-sample excuses in the Tier 1 ward."
+        "tagline": "Six weeks in: time to stop calling it 'bad luck' and admit the roster is on life support."
       },
       "headline": "Tier 1 Trauma: Midseason Autopsy",
-      "deck": "Justin the Nix of time dissected Eliquis Hurts for 141.60 points to pace Week 6, while Malone Wilson Flynn & Co survived a 136.66\u2013130.50 nail-biter over CeeDee's Nutz in Tier 1 Dynasty.",
+      "deck": "Justin the Nix of time dissected Eliquis Hurts for 141.60 points while Eliquis Hurts flatlined at 87.18, and Malone Wilson Flynn & Co robbed CeeDee's Nutz by 6.16 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 6: MIDSEASON AUTOPSY \ud83d\udea8\n\ud83d\udd25 Sweetest Execution: Justin the Nix of time (141.60 pts)\n\ud83d\udc80 Bitter Cyanide: Eliquis Hurts (87.18 pts)\n\ud83d\udd2a Heartbeat Away: Malone Wilson Flynn & Co over CeeDee's Nutz by 6.16\n\ud83e\ude91 Left Unopened: Bijan Mustard benched Tyler Shough (27.0)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=6",
       "ward_headline": "Justin the Nix of time Sets the Pace in Midseason Autopsy",
       "ward_paragraphs": [
-        "Coming out of Week 6 (Sweetest Day & Midseason), Justin the Nix of time (5-1, W2) and Malone Wilson Flynn & Co (5-1, W2) sit atop the Tier 1 standings. At the cutoff, CeeDee's Nutz (3-3) holds the #6 seed \u2014 locked in a dead-heat tiebreaker battle with Glock Purdy & Mac-10 with 8 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 122.09 median while Eliquis Hurts hit the week's floor at 87.18. Individual fireworks were headlined by Trevor Lawrence (27.3 pts for Glock Purdy & Mac-10) and Kenneth Walker III (26.9 pts for Hebrew Hammer)."
+        "Out of Week 6 (Sweetest Day & Midseason), Justin the Nix of time (5-1, W2) and Malone Wilson Flynn & Co (5-1, W2) own the top of the ward. At the cutoff, CeeDee's Nutz (3-3) sits #6 \u2014 clinging to a PF tiebreaker over Glock Purdy & Mac-10 with 8 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 122.09 median while Eliquis Hurts dragged the league floor down to 87.18 and Eliquis Hurts (1-5) anchored 12th place. Weekly MVP fireworks belonged to Trevor Lawrence (27.3 pts for Glock Purdy & Mac-10) and Kenneth Walker III (26.9 pts for Hebrew Hammer)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "4-2",
+          "all_play": "19-47",
+          "luck_delta": 37.88,
+          "roast": "Maye's Way (4-2) is riding +37.9% schedule luck over their 19-47 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "Underdog vikings",
+          "record": "2-4",
+          "all_play": "34-32",
+          "luck_delta": -18.19,
+          "roast": "Underdog vikings (2-4) owns a 34-32 All-Play mark (-18.2% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 141.6,
         "high_team": "Justin the Nix of time",
@@ -7171,38 +7519,38 @@
       "awards": [
         {
           "key": "high",
-          "title": "Sweetest Victory",
+          "title": "Sweetest Execution",
           "team": "Justin the Nix of time",
           "stat": "141.60 pts",
-          "detail": "+23.49 above league average (118.11)."
+          "detail": "Lapped the field by +23.49 over the 118.11 league average."
         },
         {
           "key": "low",
-          "title": "Bitter Pill",
+          "title": "Bitter Cyanide",
           "team": "Eliquis Hurts",
           "stat": "87.18 pts",
-          "detail": "30.93 pts below the Week 6 mean."
+          "detail": "Cratered 30.93 pts below the Week 6 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Heartbeat Away",
           "team": "Malone Wilson Flynn & Co",
           "stat": "+6.16 pts",
-          "detail": "Edged CeeDee's Nutz (136.66\u2013130.50)."
+          "detail": "Robbed CeeDee's Nutz (136.66\u2013130.50)."
         },
         {
           "key": "shootout",
           "title": "Shootout of the Week",
           "team": "Malone Wilson Flynn & Co vs CeeDee's Nutz",
           "stat": "267.16 pts",
-          "detail": "Malone Wilson Flynn & Co took the firefight 136.66\u2013130.50."
+          "detail": "Malone Wilson Flynn & Co survived the track meet 136.66\u2013130.50."
         },
         {
           "key": "bench",
           "title": "Left Unopened",
           "team": "Bijan Mustard",
           "stat": "27.0 pts",
-          "detail": "Left Tyler Shough (QB) on the bench."
+          "detail": "Left Tyler Shough (QB) rotting on the pine."
         }
       ],
       "matchups": [
@@ -7319,7 +7667,7 @@
           "margin": 54.42,
           "combined": 228.78,
           "upset_delta": -11,
-          "triage_note": "Tre Tucker (24.2) paced Justin the Nix of time past Eliquis Hurts by 54.42 pts."
+          "triage_note": "Clinical beatdown: Justin the Nix of time overwhelmed Eliquis Hurts by 54.42 pts behind Tre Tucker (24.2)."
         },
         {
           "matchup_id": 6,
@@ -7434,7 +7782,7 @@
           "margin": 41.84,
           "combined": 238.08,
           "upset_delta": -8,
-          "triage_note": "Kenneth Walker III (26.9) paced Hebrew Hammer past Dislocated Dreams by 41.84 pts."
+          "triage_note": "Kenneth Walker III (26.9) paced Hebrew Hammer past Dislocated Dreams by 41.84 pts with zero drama."
         },
         {
           "matchup_id": 3,
@@ -7549,7 +7897,7 @@
           "margin": 6.16,
           "combined": 267.16,
           "upset_delta": -3,
-          "triage_note": "Razor-thin escape by 6.16 pts: Malone Wilson Flynn & Co survived CeeDee's Nutz behind Isaiah Likely's 23.9 pts."
+          "triage_note": "Peak bench malpractice: CeeDee's Nutz benched Jaylin Noel (18.7) and handed Malone Wilson Flynn & Co a 6.16-point gift."
         },
         {
           "matchup_id": 4,
@@ -7664,7 +8012,7 @@
           "margin": 36.5,
           "combined": 235.9,
           "upset_delta": -1,
-          "triage_note": "Trevor Lawrence (27.3) paced Glock Purdy & Mac-10 past AHHHLLL by 36.50 pts, erasing C.J. Stroud's 23.0."
+          "triage_note": "Trevor Lawrence (27.3) paced Glock Purdy & Mac-10 past AHHHLLL by 36.50 pts, completely wasting C.J. Stroud (23.0) for AHHHLLL."
         },
         {
           "matchup_id": 5,
@@ -7779,7 +8127,7 @@
           "margin": 30.36,
           "combined": 224.28,
           "upset_delta": -6,
-          "triage_note": "Bench malpractice watch: BTFU left Omar Cooper Jr. (19.3 pts) on the pine as Bijan Mustard took it by 30.36."
+          "triage_note": "Clinical beatdown: Bijan Mustard overwhelmed BTFU by 30.36 pts behind Jordan Love (20.2)."
         },
         {
           "matchup_id": 2,
@@ -7894,7 +8242,7 @@
           "margin": 10.62,
           "combined": 223.1,
           "upset_delta": -1,
-          "triage_note": "Ugly survival: Maye's Way won by 10.62 despite scoring 1.25 below the league average."
+          "triage_note": "Christian McCaffrey (26.2) paced Maye's Way past Underdog vikings by 10.62 pts, completely wasting Bhayshul Tuten (22.7) for Underdog vikings."
         }
       ],
       "scoring_bars": [
@@ -8023,6 +8371,7 @@
           "pa": 647.8,
           "all_play": "56-10",
           "all_play_pct": 84.85,
+          "luck_delta": -1.52,
           "rank": 1
         },
         {
@@ -8040,6 +8389,7 @@
           "pa": 742.86,
           "all_play": "44-22",
           "all_play_pct": 66.67,
+          "luck_delta": 16.66,
           "rank": 2
         },
         {
@@ -8057,6 +8407,7 @@
           "pa": 703.62,
           "all_play": "47-19",
           "all_play_pct": 71.21,
+          "luck_delta": 12.12,
           "rank": 3
         },
         {
@@ -8074,6 +8425,7 @@
           "pa": 822.56,
           "all_play": "41-25",
           "all_play_pct": 62.12,
+          "luck_delta": 4.55,
           "rank": 4
         },
         {
@@ -8091,6 +8443,7 @@
           "pa": 647.34,
           "all_play": "19-47",
           "all_play_pct": 28.79,
+          "luck_delta": 37.88,
           "rank": 5
         },
         {
@@ -8108,6 +8461,7 @@
           "pa": 857.28,
           "all_play": "45-21",
           "all_play_pct": 68.18,
+          "luck_delta": -18.18,
           "rank": 6
         },
         {
@@ -8125,6 +8479,7 @@
           "pa": 773.7,
           "all_play": "35-31",
           "all_play_pct": 53.03,
+          "luck_delta": -3.03,
           "rank": 7
         },
         {
@@ -8142,6 +8497,7 @@
           "pa": 794.9,
           "all_play": "34-32",
           "all_play_pct": 51.52,
+          "luck_delta": -18.19,
           "rank": 8
         },
         {
@@ -8159,6 +8515,7 @@
           "pa": 794.0,
           "all_play": "26-40",
           "all_play_pct": 39.39,
+          "luck_delta": -6.06,
           "rank": 9
         },
         {
@@ -8176,6 +8533,7 @@
           "pa": 787.02,
           "all_play": "15-51",
           "all_play_pct": 22.73,
+          "luck_delta": -6.06,
           "rank": 10
         },
         {
@@ -8193,6 +8551,7 @@
           "pa": 863.18,
           "all_play": "21-45",
           "all_play_pct": 31.82,
+          "luck_delta": -15.15,
           "rank": 11
         },
         {
@@ -8210,6 +8569,7 @@
           "pa": 851.7,
           "all_play": "13-53",
           "all_play_pct": 19.7,
+          "luck_delta": -3.03,
           "rank": 12
         }
       ],
@@ -8309,19 +8669,37 @@
       "dispatch_date": "Oct 27, 2026",
       "theme": {
         "id": "haunted-ward",
+        "motif": "skull",
         "holiday": "Spooky Season",
         "edition": "Haunted Ward Intake",
         "accent": "#EA580C",
         "accent_soft": "rgba(234, 88, 12, 0.16)",
-        "tagline": "Ghostly projections and nightmare matchups as Halloween approaches."
+        "tagline": "Ghostly projections, zombie benches, and nightmare matchups creeping into Halloween."
       },
       "headline": "Tier 1 Trauma: Haunted Ward Intake",
-      "deck": "AHHHLLL haunted Dislocated Dreams for 148.10 points to pace Week 7, while Justin the Nix of time survived a 129.72\u2013120.08 nail-biter over Malone Wilson Flynn & Co in Tier 1 Dynasty.",
+      "deck": "AHHHLLL haunted Dislocated Dreams for 148.10 points while Dislocated Dreams flatlined at 60.38, and Justin the Nix of time robbed Malone Wilson Flynn & Co by 9.64 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 7: HAUNTED WARD INTAKE \ud83d\udea8\n\ud83d\udd25 Apex Slasher: AHHHLLL (148.10 pts)\n\ud83d\udc80 Ghost Town: Dislocated Dreams (60.38 pts)\n\ud83d\udd2a Final Girl Survival: Justin the Nix of time over Malone Wilson Flynn & Co by 9.64\n\ud83e\ude91 Buried Alive: Malone Wilson Flynn & Co benched Malik Willis (26.0)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=7",
       "ward_headline": "Justin the Nix of time Sets the Pace in Haunted Ward Intake",
       "ward_paragraphs": [
-        "Coming out of Week 7 (Spooky Season), Justin the Nix of time (6-1, W3) and Hebrew Hammer (6-1, W5) sit atop the Tier 1 standings. At the cutoff, Glock Purdy & Mac-10 (4-3) holds the #6 seed \u2014 locked in a dead-heat tiebreaker battle with Maye's Way with 7 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 123.11 median while Dislocated Dreams hit the week's floor at 60.38. Individual fireworks were headlined by Tony Pollard (35.0 pts for Malone Wilson Flynn & Co) and Joe Burrow (28.9 pts for CeeDee's Nutz)."
+        "Out of Week 7 (Spooky Season), Justin the Nix of time (6-1, W3) and Hebrew Hammer (6-1, W5) own the top of the ward. At the cutoff, Glock Purdy & Mac-10 (4-3) sits #6 \u2014 clinging to a PF tiebreaker over Maye's Way with 7 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 123.11 median while Dislocated Dreams dragged the league floor down to 60.38 and Dislocated Dreams (1-6) anchored 12th place. Weekly MVP fireworks belonged to Tony Pollard (35.0 pts for Malone Wilson Flynn & Co) and Joe Burrow (28.9 pts for CeeDee's Nutz)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "4-3",
+          "all_play": "20-57",
+          "luck_delta": 31.17,
+          "roast": "Maye's Way (4-3) is riding +31.2% schedule luck over their 20-57 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "Underdog vikings",
+          "record": "3-4",
+          "all_play": "44-33",
+          "luck_delta": -14.28,
+          "roast": "Underdog vikings (3-4) owns a 44-33 All-Play mark (-14.3% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 148.1,
         "high_team": "AHHHLLL",
@@ -8392,38 +8770,38 @@
       "awards": [
         {
           "key": "high",
-          "title": "Apex Predator",
+          "title": "Apex Slasher",
           "team": "AHHHLLL",
           "stat": "148.10 pts",
-          "detail": "+28.63 above league average (119.47)."
+          "detail": "Lapped the field by +28.63 over the 119.47 league average."
         },
         {
           "key": "low",
           "title": "Ghost Town",
           "team": "Dislocated Dreams",
           "stat": "60.38 pts",
-          "detail": "59.09 pts below the Week 7 mean."
+          "detail": "Cratered 59.09 pts below the Week 7 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Final Girl Survival",
           "team": "Justin the Nix of time",
           "stat": "+9.64 pts",
-          "detail": "Edged Malone Wilson Flynn & Co (129.72\u2013120.08)."
+          "detail": "Robbed Malone Wilson Flynn & Co (129.72\u2013120.08)."
         },
         {
           "key": "upset",
           "title": "Jump Scare",
           "team": "Glock Purdy & Mac-10",
           "stat": "#7 over #5",
-          "detail": "Knocked off Maye's Way 138.70\u201399.32."
+          "detail": "Humiliated Maye's Way 138.70\u201399.32."
         },
         {
           "key": "bench",
           "title": "Buried Alive",
           "team": "Malone Wilson Flynn & Co",
           "stat": "26.0 pts",
-          "detail": "Left Malik Willis (QB) on the bench in a loss."
+          "detail": "Left Malik Willis (QB) rotting on the pine in an L."
         }
       ],
       "matchups": [
@@ -8540,7 +8918,7 @@
           "margin": 87.72,
           "combined": 208.48,
           "upset_delta": -2,
-          "triage_note": "Code Blue blowout by 87.72 pts: Dak Prescott (23.3) led AHHHLLL as they haunted Dislocated Dreams."
+          "triage_note": "Mercy-rule massacre (+87.72): AHHHLLL dropped 148.10 behind Dak Prescott (23.3) and sent Dislocated Dreams straight to the morgue."
         },
         {
           "matchup_id": 1,
@@ -8655,7 +9033,7 @@
           "margin": 37.2,
           "combined": 257.04,
           "upset_delta": -4,
-          "triage_note": "Zay Flowers (23.7) paced Underdog vikings past Eliquis Hurts by 37.20 pts, erasing Caleb Williams's 22.1."
+          "triage_note": "Cellar-bowl chaos: Underdog vikings took the basement brawl by 37.20 behind Zay Flowers (23.7), while Eliquis Hurts kept their eyes firmly on the 1.01."
         },
         {
           "matchup_id": 3,
@@ -8770,7 +9148,7 @@
           "margin": 39.38,
           "combined": 238.02,
           "upset_delta": 2,
-          "triage_note": "Jameson Williams (23.6) paced Glock Purdy & Mac-10 past Maye's Way by 39.38 pts, erasing Drake Maye's 27.4."
+          "triage_note": "Jameson Williams (23.6) paced Glock Purdy & Mac-10 past Maye's Way by 39.38 pts, completely wasting Drake Maye (27.4) for Maye's Way."
         },
         {
           "matchup_id": 4,
@@ -8885,7 +9263,7 @@
           "margin": 20.5,
           "combined": 239.3,
           "upset_delta": -4,
-          "triage_note": "Joe Burrow (28.9) paced CeeDee's Nutz past BTFU by 20.50 pts, erasing Trey McBride's 27.1."
+          "triage_note": "Clinical beatdown: CeeDee's Nutz shredded BTFU by 20.50 pts behind Joe Burrow (28.9)."
         },
         {
           "matchup_id": 2,
@@ -9000,7 +9378,7 @@
           "margin": 9.64,
           "combined": 249.8,
           "upset_delta": -1,
-          "triage_note": "Bench malpractice watch: Malone Wilson Flynn & Co left Malik Willis (26.0 pts) on the pine as Justin the Nix of time took it by 9.64."
+          "triage_note": "Peak bench malpractice: Malone Wilson Flynn & Co benched Malik Willis (26.0) and handed Justin the Nix of time a 9.64-point gift."
         },
         {
           "matchup_id": 6,
@@ -9115,7 +9493,7 @@
           "margin": 11.28,
           "combined": 241.0,
           "upset_delta": -1,
-          "triage_note": "Mason Taylor (25.2) paced Hebrew Hammer past Bijan Mustard by 11.28 pts, erasing Tee Higgins's 23.8."
+          "triage_note": "Clinical beatdown: Hebrew Hammer shredded Bijan Mustard by 11.28 pts behind Mason Taylor (25.2)."
         }
       ],
       "scoring_bars": [
@@ -9244,6 +9622,7 @@
           "pa": 767.88,
           "all_play": "63-14",
           "all_play_pct": 81.82,
+          "luck_delta": 3.89,
           "rank": 1
         },
         {
@@ -9261,6 +9640,7 @@
           "pa": 818.48,
           "all_play": "53-24",
           "all_play_pct": 68.83,
+          "luck_delta": 16.88,
           "rank": 2
         },
         {
@@ -9278,6 +9658,7 @@
           "pa": 872.58,
           "all_play": "49-28",
           "all_play_pct": 63.64,
+          "luck_delta": 7.79,
           "rank": 3
         },
         {
@@ -9295,6 +9676,7 @@
           "pa": 966.68,
           "all_play": "53-24",
           "all_play_pct": 68.83,
+          "luck_delta": -11.69,
           "rank": 4
         },
         {
@@ -9312,6 +9694,7 @@
           "pa": 948.7,
           "all_play": "45-32",
           "all_play_pct": 58.44,
+          "luck_delta": -1.3,
           "rank": 5
         },
         {
@@ -9329,6 +9712,7 @@
           "pa": 873.02,
           "all_play": "44-33",
           "all_play_pct": 57.14,
+          "luck_delta": 0.0,
           "rank": 6
         },
         {
@@ -9346,6 +9730,7 @@
           "pa": 786.04,
           "all_play": "20-57",
           "all_play_pct": 25.97,
+          "luck_delta": 31.17,
           "rank": 7
         },
         {
@@ -9363,6 +9748,7 @@
           "pa": 904.82,
           "all_play": "44-33",
           "all_play_pct": 57.14,
+          "luck_delta": -14.28,
           "rank": 8
         },
         {
@@ -9380,6 +9766,7 @@
           "pa": 854.38,
           "all_play": "37-40",
           "all_play_pct": 48.05,
+          "luck_delta": -5.19,
           "rank": 9
         },
         {
@@ -9397,6 +9784,7 @@
           "pa": 916.92,
           "all_play": "17-60",
           "all_play_pct": 22.08,
+          "luck_delta": -7.79,
           "rank": 10
         },
         {
@@ -9414,6 +9802,7 @@
           "pa": 998.82,
           "all_play": "16-61",
           "all_play_pct": 20.78,
+          "luck_delta": -6.49,
           "rank": 11
         },
         {
@@ -9431,6 +9820,7 @@
           "pa": 1011.28,
           "all_play": "21-56",
           "all_play_pct": 27.27,
+          "luck_delta": -12.98,
           "rank": 12
         }
       ],
@@ -9530,19 +9920,37 @@
       "dispatch_date": "Nov 03, 2026",
       "theme": {
         "id": "halloween",
+        "motif": "pumpkin",
         "holiday": "Halloween",
         "edition": "Halloween Bloodbath",
         "accent": "#F97316",
         "accent_soft": "rgba(249, 115, 22, 0.16)",
-        "tagline": "All tricks, no treats \u2014 a full Code Red horror show across Tier 1."
+        "tagline": "All tricks, zero mercy \u2014 a full Code Red horror show across the Tier 1 ward."
       },
       "headline": "Tier 1 Trauma: Halloween Bloodbath",
-      "deck": "Justin the Nix of time carved up BTFU for 191.02 points to pace Week 8, while Eliquis Hurts survived a 102.26\u201399.46 nail-biter over Malone Wilson Flynn & Co in Tier 1 Dynasty.",
-      "ward_headline": "Justin the Nix of time Leads the Ward as Playoff Lines Sharpen",
+      "deck": "Justin the Nix of time slashed through BTFU for 191.02 points while AHHHLLL flatlined at 85.90, and Eliquis Hurts robbed Malone Wilson Flynn & Co by 2.80 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 8: HALLOWEEN BLOODBATH \ud83d\udea8\n\ud83d\udd25 Full-Size Candy Bar: Justin the Nix of time (191.02 pts)\n\ud83d\udc80 Bag of Rocks: AHHHLLL (85.90 pts)\n\ud83d\udd2a Midnight Escape: Eliquis Hurts over Malone Wilson Flynn & Co by 2.80\n\ud83e\ude91 Skeleton on the Bench: Justin the Nix of time benched Tyler Allgeier (33.6)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=8",
+      "ward_headline": "Justin the Nix of time Runs the Ward While BTFU Holds the Morgue Key",
       "ward_paragraphs": [
-        "Coming out of Week 8 (Halloween), Justin the Nix of time (7-1, W4) and Hebrew Hammer (6-2, L1) sit atop the Tier 1 standings. At the cutoff, Underdog vikings (4-4) holds the #6 seed \u2014 locked in a dead-heat tiebreaker battle with Glock Purdy & Mac-10 with 6 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 117.13 median while AHHHLLL hit the week's floor at 85.90. Individual fireworks were headlined by Joe Burrow (39.5 pts for CeeDee's Nutz) and Tee Higgins (32.5 pts for Bijan Mustard)."
+        "Out of Week 8 (Halloween), Justin the Nix of time (7-1, W4) and Hebrew Hammer (6-2, L1) own the top of the ward. At the cutoff, Underdog vikings (4-4) sits #6 \u2014 clinging to a PF tiebreaker over Glock Purdy & Mac-10 with 6 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 117.13 median while AHHHLLL dragged the league floor down to 85.90 and BTFU (1-7) anchored 12th place. Weekly MVP fireworks belonged to Joe Burrow (39.5 pts for CeeDee's Nutz) and Tee Higgins (32.5 pts for Bijan Mustard)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "4-4",
+          "all_play": "21-67",
+          "luck_delta": 26.14,
+          "roast": "Maye's Way (4-4) is riding +26.1% schedule luck over their 21-67 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "BTFU",
+          "record": "1-7",
+          "all_play": "22-66",
+          "luck_delta": -12.5,
+          "roast": "BTFU (1-7) owns a 22-66 All-Play mark (-12.5% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 191.02,
         "high_team": "Justin the Nix of time",
@@ -9616,35 +10024,35 @@
           "title": "Full-Size Candy Bar",
           "team": "Justin the Nix of time",
           "stat": "191.02 pts",
-          "detail": "+68.06 above league average (122.96)."
+          "detail": "Lapped the field by +68.06 over the 122.96 league average."
         },
         {
           "key": "low",
           "title": "Bag of Rocks",
           "team": "AHHHLLL",
           "stat": "85.90 pts",
-          "detail": "37.06 pts below the Week 8 mean."
+          "detail": "Cratered 37.06 pts below the Week 8 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Midnight Escape",
           "team": "Eliquis Hurts",
           "stat": "+2.80 pts",
-          "detail": "Edged Malone Wilson Flynn & Co (102.26\u201399.46)."
+          "detail": "Robbed Malone Wilson Flynn & Co (102.26\u201399.46)."
         },
         {
           "key": "shootout",
           "title": "Shootout of the Week",
           "team": "Justin the Nix of time vs BTFU",
           "stat": "306.16 pts",
-          "detail": "Justin the Nix of time took the firefight 191.02\u2013115.14."
+          "detail": "Justin the Nix of time survived the track meet 191.02\u2013115.14."
         },
         {
           "key": "bench",
           "title": "Skeleton on the Bench",
           "team": "Justin the Nix of time",
           "stat": "33.6 pts",
-          "detail": "Left Tyler Allgeier (RB) on the bench."
+          "detail": "Left Tyler Allgeier (RB) rotting on the pine."
         }
       ],
       "matchups": [
@@ -9761,7 +10169,7 @@
           "margin": 75.88,
           "combined": 306.16,
           "upset_delta": -9,
-          "triage_note": "Code Blue blowout by 75.88 pts: Brock Bowers (28.2) led Justin the Nix of time as they carved up BTFU."
+          "triage_note": "Mercy-rule massacre (+75.88): Justin the Nix of time dropped 191.02 behind Brock Bowers (28.2) and sent BTFU straight to the morgue."
         },
         {
           "matchup_id": 2,
@@ -9876,7 +10284,7 @@
           "margin": 16.3,
           "combined": 282.06,
           "upset_delta": 2,
-          "triage_note": "Bhayshul Tuten (28.9) paced Underdog vikings past Glock Purdy & Mac-10 by 16.30 pts, erasing PIT D/ST's 23.0."
+          "triage_note": "Bhayshul Tuten (28.9) paced Underdog vikings past Glock Purdy & Mac-10 by 16.30 pts, completely wasting PIT D/ST (23.0) for Glock Purdy & Mac-10."
         },
         {
           "matchup_id": 6,
@@ -9991,7 +10399,7 @@
           "margin": 59.46,
           "combined": 231.26,
           "upset_delta": -4,
-          "triage_note": "Tee Higgins (32.5) paced Bijan Mustard past AHHHLLL by 59.46 pts, erasing Ja'Marr Chase's 25.6."
+          "triage_note": "Tee Higgins (32.5) paced Bijan Mustard past AHHHLLL by 59.46 pts, completely wasting Ja'Marr Chase (25.6) for AHHHLLL."
         },
         {
           "matchup_id": 5,
@@ -10106,7 +10514,7 @@
           "margin": 7.66,
           "combined": 245.9,
           "upset_delta": 2,
-          "triage_note": "Razor-thin escape by 7.66 pts: CeeDee's Nutz survived Hebrew Hammer behind Joe Burrow's 39.5 pts."
+          "triage_note": "Peak bench malpractice: Hebrew Hammer benched Adonai Mitchell (23.7) and handed CeeDee's Nutz a 7.66-point gift."
         },
         {
           "matchup_id": 4,
@@ -10221,7 +10629,7 @@
           "margin": 14.98,
           "combined": 208.42,
           "upset_delta": 5,
-          "triage_note": "Ugly survival: Dislocated Dreams won by 14.98 despite scoring 11.26 below the league average."
+          "triage_note": "Shameless schedule luck: Dislocated Dreams scored 11.26 BELOW league average and still stole a 14.98-point W from Maye's Way."
         },
         {
           "matchup_id": 1,
@@ -10336,7 +10744,7 @@
           "margin": 2.8,
           "combined": 201.72,
           "upset_delta": 8,
-          "triage_note": "Razor-thin escape by 2.80 pts: Eliquis Hurts survived Malone Wilson Flynn & Co behind Harold Fannin Jr.'s 23.4 pts."
+          "triage_note": "Heartbreak in the trauma ward: Eliquis Hurts stole this one by 2.80 pts \u2014 Malone Wilson Flynn & Co is going to lose sleep over every single start/sit."
         }
       ],
       "scoring_bars": [
@@ -10465,6 +10873,7 @@
           "pa": 883.02,
           "all_play": "74-14",
           "all_play_pct": 84.09,
+          "luck_delta": 3.41,
           "rank": 1
         },
         {
@@ -10482,6 +10891,7 @@
           "pa": 945.26,
           "all_play": "59-29",
           "all_play_pct": 67.05,
+          "luck_delta": 7.95,
           "rank": 2
         },
         {
@@ -10499,6 +10909,7 @@
           "pa": 974.84,
           "all_play": "51-37",
           "all_play_pct": 57.95,
+          "luck_delta": 4.55,
           "rank": 3
         },
         {
@@ -10516,6 +10927,7 @@
           "pa": 1034.6,
           "all_play": "54-34",
           "all_play_pct": 61.36,
+          "luck_delta": 1.14,
           "rank": 4
         },
         {
@@ -10533,6 +10945,7 @@
           "pa": 1085.8,
           "all_play": "60-28",
           "all_play_pct": 68.18,
+          "luck_delta": -5.68,
           "rank": 5
         },
         {
@@ -10550,6 +10963,7 @@
           "pa": 1037.7,
           "all_play": "54-34",
           "all_play_pct": 61.36,
+          "luck_delta": -11.36,
           "rank": 6
         },
         {
@@ -10567,6 +10981,7 @@
           "pa": 1022.2,
           "all_play": "52-36",
           "all_play_pct": 59.09,
+          "luck_delta": -9.09,
           "rank": 7
         },
         {
@@ -10584,6 +10999,7 @@
           "pa": 897.74,
           "all_play": "21-67",
           "all_play_pct": 23.86,
+          "luck_delta": 26.14,
           "rank": 8
         },
         {
@@ -10601,6 +11017,7 @@
           "pa": 999.74,
           "all_play": "37-51",
           "all_play_pct": 42.05,
+          "luck_delta": -4.55,
           "rank": 9
         },
         {
@@ -10618,6 +11035,7 @@
           "pa": 1098.28,
           "all_play": "19-69",
           "all_play_pct": 21.59,
+          "luck_delta": 3.41,
           "rank": 10
         },
         {
@@ -10635,6 +11053,7 @@
           "pa": 1108.0,
           "all_play": "25-63",
           "all_play_pct": 28.41,
+          "luck_delta": -3.41,
           "rank": 11
         },
         {
@@ -10652,6 +11071,7 @@
           "pa": 1107.94,
           "all_play": "22-66",
           "all_play_pct": 25.0,
+          "luck_delta": -12.5,
           "rank": 12
         }
       ],
@@ -10751,19 +11171,37 @@
       "dispatch_date": "Nov 10, 2026",
       "theme": {
         "id": "daylight-saving",
+        "motif": "clock",
         "holiday": "Daylight Saving & Election Week",
         "edition": "Fall Back Flatline",
         "accent": "#0EA5E9",
         "accent_soft": "rgba(14, 165, 233, 0.16)",
-        "tagline": "Clocks fell back an hour, and several playoff hopes fell back a full game."
+        "tagline": "Clocks fell back an hour, and several pretenders fell right out of the playoff picture."
       },
       "headline": "Tier 1 Trauma: Fall Back Flatline",
-      "deck": "Bijan Mustard swept Maye's Way for 148.58 points to pace Week 9, while AHHHLLL survived a 148.06\u2013145.72 nail-biter over CeeDee's Nutz in Tier 1 Dynasty.",
-      "ward_headline": "Justin the Nix of time Leads the Ward as Playoff Lines Sharpen",
+      "deck": "Bijan Mustard swept Maye's Way for 148.58 points while Dislocated Dreams flatlined at 88.96, and AHHHLLL robbed CeeDee's Nutz by 2.34 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 9: FALL BACK FLATLINE \ud83d\udea8\n\ud83d\udd25 Landslide Victory: Bijan Mustard (148.58 pts)\n\ud83d\udc80 Recount Required: Dislocated Dreams (88.96 pts)\n\ud83d\udd2a Too Close to Call: AHHHLLL over CeeDee's Nutz by 2.34\n\ud83e\ude91 Unclaimed Ballot: Eliquis Hurts benched Kayshon Boutte (26.5)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=9",
+      "ward_headline": "Justin the Nix of time Runs the Ward While BTFU Holds the Morgue Key",
       "ward_paragraphs": [
-        "Coming out of Week 9 (Daylight Saving & Election Week), Justin the Nix of time (7-2, L1) and Hebrew Hammer (7-2, W1) sit atop the Tier 1 standings. At the cutoff, CeeDee's Nutz (5-4) holds the #6 seed \u2014 locked in a dead-heat tiebreaker battle with Glock Purdy & Mac-10 with 5 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 126.24 median while Dislocated Dreams hit the week's floor at 88.96. Individual fireworks were headlined by Jordan Love (36.2 pts for Malone Wilson Flynn & Co) and C.J. Stroud (35.4 pts for AHHHLLL)."
+        "Out of Week 9 (Daylight Saving & Election Week), Justin the Nix of time (7-2, L1) and Hebrew Hammer (7-2, W1) own the top of the ward. At the cutoff, CeeDee's Nutz (5-4) sits #6 \u2014 clinging to a PF tiebreaker over Glock Purdy & Mac-10 with 5 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 126.24 median while Dislocated Dreams dragged the league floor down to 88.96 and BTFU (1-8) anchored 12th place. Weekly MVP fireworks belonged to Jordan Love (36.2 pts for Malone Wilson Flynn & Co) and C.J. Stroud (35.4 pts for AHHHLLL)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "4-5",
+          "all_play": "26-73",
+          "luck_delta": 18.18,
+          "roast": "Maye's Way (4-5) is riding +18.2% schedule luck over their 26-73 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "CeeDee's Nutz",
+          "record": "5-4",
+          "all_play": "69-30",
+          "luck_delta": -14.14,
+          "roast": "CeeDee's Nutz (5-4) owns a 69-30 All-Play mark (-14.1% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 148.58,
         "high_team": "Bijan Mustard",
@@ -10837,35 +11275,35 @@
           "title": "Landslide Victory",
           "team": "Bijan Mustard",
           "stat": "148.58 pts",
-          "detail": "+23.07 above league average (125.51)."
+          "detail": "Lapped the field by +23.07 over the 125.51 league average."
         },
         {
           "key": "low",
           "title": "Recount Required",
           "team": "Dislocated Dreams",
           "stat": "88.96 pts",
-          "detail": "36.55 pts below the Week 9 mean."
+          "detail": "Cratered 36.55 pts below the Week 9 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Too Close to Call",
           "team": "AHHHLLL",
           "stat": "+2.34 pts",
-          "detail": "Edged CeeDee's Nutz (148.06\u2013145.72)."
+          "detail": "Robbed CeeDee's Nutz (148.06\u2013145.72)."
         },
         {
           "key": "shootout",
           "title": "Shootout of the Week",
           "team": "AHHHLLL vs CeeDee's Nutz",
           "stat": "293.78 pts",
-          "detail": "AHHHLLL took the firefight 148.06\u2013145.72."
+          "detail": "AHHHLLL survived the track meet 148.06\u2013145.72."
         },
         {
           "key": "bench",
           "title": "Unclaimed Ballot",
           "team": "Eliquis Hurts",
           "stat": "26.5 pts",
-          "detail": "Left Kayshon Boutte (WR) on the bench in a loss."
+          "detail": "Left Kayshon Boutte (WR) rotting on the pine in an L."
         }
       ],
       "matchups": [
@@ -10982,7 +11420,7 @@
           "margin": 25.84,
           "combined": 271.32,
           "upset_delta": -4,
-          "triage_note": "Bijan Robinson (23.7) paced Bijan Mustard past Maye's Way by 25.84 pts, erasing Puka Nacua's 28.0."
+          "triage_note": "Bijan Robinson (23.7) paced Bijan Mustard past Maye's Way by 25.84 pts, completely wasting Puka Nacua (28.0) for Maye's Way."
         },
         {
           "matchup_id": 6,
@@ -11097,7 +11535,7 @@
           "margin": 2.34,
           "combined": 293.78,
           "upset_delta": 4,
-          "triage_note": "Razor-thin escape by 2.34 pts: AHHHLLL edged CeeDee's Nutz behind C.J. Stroud's 35.4 pts."
+          "triage_note": "Heartbreak in the trauma ward: AHHHLLL stole this one by 2.34 pts \u2014 CeeDee's Nutz is going to lose sleep over every single start/sit."
         },
         {
           "matchup_id": 3,
@@ -11212,7 +11650,7 @@
           "margin": 53.32,
           "combined": 231.24,
           "upset_delta": -5,
-          "triage_note": "Bucky Irving (26.5) paced Underdog vikings past Dislocated Dreams by 53.32 pts."
+          "triage_note": "Bucky Irving (26.5) paced Underdog vikings past Dislocated Dreams by 53.32 pts with zero drama."
         },
         {
           "matchup_id": 2,
@@ -11327,7 +11765,7 @@
           "margin": 41.32,
           "combined": 221.48,
           "upset_delta": -9,
-          "triage_note": "Jordan Love (36.2) paced Malone Wilson Flynn & Co past BTFU by 41.32 pts."
+          "triage_note": "Clinical beatdown: Malone Wilson Flynn & Co outvoted BTFU by 41.32 pts behind Jordan Love (36.2)."
         },
         {
           "matchup_id": 4,
@@ -11442,7 +11880,7 @@
           "margin": 8.3,
           "combined": 251.18,
           "upset_delta": 1,
-          "triage_note": "Kenneth Walker III (34.3) paced Hebrew Hammer past Justin the Nix of time by 8.30 pts, erasing Matthew Golden's 27.4."
+          "triage_note": "Clinical beatdown: Hebrew Hammer outvoted Justin the Nix of time by 8.30 pts behind Kenneth Walker III (34.3)."
         },
         {
           "matchup_id": 1,
@@ -11557,7 +11995,7 @@
           "margin": 6.58,
           "combined": 237.14,
           "upset_delta": -3,
-          "triage_note": "Razor-thin escape by 6.58 pts: Glock Purdy & Mac-10 edged Eliquis Hurts behind Brock Purdy's 25.3 pts."
+          "triage_note": "Fire the coaching staff: Eliquis Hurts left Kayshon Boutte (26.5 pts) rotting on the bench and lost to Glock Purdy & Mac-10 by 6.58."
         }
       ],
       "scoring_bars": [
@@ -11686,6 +12124,7 @@
           "pa": 1012.76,
           "all_play": "77-22",
           "all_play_pct": 77.78,
+          "luck_delta": 0.0,
           "rank": 1
         },
         {
@@ -11703,6 +12142,7 @@
           "pa": 1066.7,
           "all_play": "65-34",
           "all_play_pct": 65.66,
+          "luck_delta": 12.12,
           "rank": 2
         },
         {
@@ -11720,6 +12160,7 @@
           "pa": 1064.92,
           "all_play": "58-41",
           "all_play_pct": 58.59,
+          "luck_delta": 8.08,
           "rank": 3
         },
         {
@@ -11737,6 +12178,7 @@
           "pa": 1157.34,
           "all_play": "65-34",
           "all_play_pct": 65.66,
+          "luck_delta": 1.01,
           "rank": 4
         },
         {
@@ -11754,6 +12196,7 @@
           "pa": 1126.66,
           "all_play": "62-37",
           "all_play_pct": 62.63,
+          "luck_delta": -7.07,
           "rank": 5
         },
         {
@@ -11771,6 +12214,7 @@
           "pa": 1233.86,
           "all_play": "69-30",
           "all_play_pct": 69.7,
+          "luck_delta": -14.14,
           "rank": 6
         },
         {
@@ -11788,6 +12232,7 @@
           "pa": 1137.48,
           "all_play": "56-43",
           "all_play_pct": 56.57,
+          "luck_delta": -1.01,
           "rank": 7
         },
         {
@@ -11805,6 +12250,7 @@
           "pa": 1145.46,
           "all_play": "47-52",
           "all_play_pct": 47.47,
+          "luck_delta": -3.03,
           "rank": 8
         },
         {
@@ -11822,6 +12268,7 @@
           "pa": 1046.32,
           "all_play": "26-73",
           "all_play_pct": 26.26,
+          "luck_delta": 18.18,
           "rank": 9
         },
         {
@@ -11839,6 +12286,7 @@
           "pa": 1220.14,
           "all_play": "21-78",
           "all_play_pct": 21.21,
+          "luck_delta": 1.01,
           "rank": 10
         },
         {
@@ -11856,6 +12304,7 @@
           "pa": 1250.28,
           "all_play": "25-74",
           "all_play_pct": 25.25,
+          "luck_delta": -3.03,
           "rank": 11
         },
         {
@@ -11873,6 +12322,7 @@
           "pa": 1239.34,
           "all_play": "23-76",
           "all_play_pct": 23.23,
+          "luck_delta": -12.12,
           "rank": 12
         }
       ],
@@ -11972,19 +12422,37 @@
       "dispatch_date": "Nov 17, 2026",
       "theme": {
         "id": "veterans-day",
+        "motif": "star",
         "holiday": "Veterans Day Week",
         "edition": "Week 10 Bloodbath",
         "accent": "#DC2626",
         "accent_soft": "rgba(220, 38, 38, 0.16)",
-        "tagline": "Heavy artillery at the top of the table as the playoff stretch begins."
+        "tagline": "Heavy artillery at the top of the table as the playoff stretch turns ruthless."
       },
       "headline": "Tier 1 Trauma: Week 10 Bloodbath",
-      "deck": "Malone Wilson Flynn & Co obliterated Hebrew Hammer for 228.32 points to pace Week 10, while BTFU survived a 111.20\u201390.26 nail-biter over Eliquis Hurts in Tier 1 Dynasty.",
-      "ward_headline": "Justin the Nix of time Leads the Ward as Playoff Lines Sharpen",
+      "deck": "Malone Wilson Flynn & Co obliterated Hebrew Hammer for 228.32 points while Dislocated Dreams flatlined at 88.86, and BTFU robbed Eliquis Hurts by 20.94 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 10: WEEK 10 BLOODBATH \ud83d\udea8\n\ud83d\udd25 Top Trauma Unit: Malone Wilson Flynn & Co (228.32 pts)\n\ud83d\udc80 DOA Watch: Dislocated Dreams (88.86 pts)\n\ud83d\udd2a Trench Survival: BTFU over Eliquis Hurts by 20.94\n\ud83e\ude91 Reserve Artillery: Maye's Way benched Deshaun Watson (21.4)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=10",
+      "ward_headline": "Justin the Nix of time Runs the Ward While Dislocated Dreams Holds the Morgue Key",
       "ward_paragraphs": [
-        "Coming out of Week 10 (Veterans Day Week), Justin the Nix of time (7-3, L2) and Malone Wilson Flynn & Co (7-3, W2) sit atop the Tier 1 standings. At the cutoff, Glock Purdy & Mac-10 (6-4) holds the #6 seed \u2014 one game ahead of the #7 bubble with 4 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 118.72 median while Dislocated Dreams hit the week's floor at 88.86. Individual fireworks were headlined by Christian McCaffrey (44.3 pts for Maye's Way) and Jahmyr Gibbs (40.7 pts for Underdog vikings)."
+        "Out of Week 10 (Veterans Day Week), Justin the Nix of time (7-3, L2) and Malone Wilson Flynn & Co (7-3, W2) own the top of the ward. At the cutoff, Glock Purdy & Mac-10 (6-4) sits #6 \u2014 just one game ahead of the #7 bubble with 4 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 118.72 median while Dislocated Dreams dragged the league floor down to 88.86 and Dislocated Dreams (2-8) anchored 12th place. Weekly MVP fireworks belonged to Christian McCaffrey (44.3 pts for Maye's Way) and Jahmyr Gibbs (40.7 pts for Underdog vikings)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "4-6",
+          "all_play": "29-81",
+          "luck_delta": 13.64,
+          "roast": "Maye's Way (4-6) is riding +13.6% schedule luck over their 29-81 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "Underdog vikings",
+          "record": "5-5",
+          "all_play": "69-41",
+          "luck_delta": -12.73,
+          "roast": "Underdog vikings (5-5) owns a 69-41 All-Play mark (-12.7% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 228.32,
         "high_team": "Malone Wilson Flynn & Co",
@@ -12058,35 +12526,35 @@
           "title": "Top Trauma Unit",
           "team": "Malone Wilson Flynn & Co",
           "stat": "228.32 pts",
-          "detail": "+94.41 above league average (133.91)."
+          "detail": "Lapped the field by +94.41 over the 133.91 league average."
         },
         {
           "key": "low",
-          "title": "Flatline Watch",
+          "title": "DOA Watch",
           "team": "Dislocated Dreams",
           "stat": "88.86 pts",
-          "detail": "45.05 pts below the Week 10 mean."
+          "detail": "Cratered 45.05 pts below the Week 10 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Trench Survival",
           "team": "BTFU",
           "stat": "+20.94 pts",
-          "detail": "Edged Eliquis Hurts (111.20\u201390.26)."
+          "detail": "Robbed Eliquis Hurts (111.20\u201390.26)."
         },
         {
           "key": "upset",
           "title": "Ambush of the Week",
           "team": "AHHHLLL",
           "stat": "#8 over #1",
-          "detail": "Knocked off Justin the Nix of time 151.34\u2013117.90."
+          "detail": "Humiliated Justin the Nix of time 151.34\u2013117.90."
         },
         {
           "key": "bench",
           "title": "Reserve Artillery",
           "team": "Maye's Way",
           "stat": "21.4 pts",
-          "detail": "Left Deshaun Watson (QB) on the bench in a loss."
+          "detail": "Left Deshaun Watson (QB) rotting on the pine in an L."
         }
       ],
       "matchups": [
@@ -12203,7 +12671,7 @@
           "margin": 138.68,
           "combined": 317.96,
           "upset_delta": 1,
-          "triage_note": "Code Blue blowout by 138.68 pts: George Pickens (38.0) led Malone Wilson Flynn & Co as they obliterated Hebrew Hammer."
+          "triage_note": "Public execution by 138.68 pts: Hebrew Hammer posted 89.64 and had to sit there while George Pickens (38.0) ran up the score for Malone Wilson Flynn & Co."
         },
         {
           "matchup_id": 6,
@@ -12318,7 +12786,7 @@
           "margin": 82.26,
           "combined": 299.54,
           "upset_delta": -3,
-          "triage_note": "Code Blue blowout by 82.26 pts: Joe Burrow (33.2) led CeeDee's Nutz as they obliterated Maye's Way."
+          "triage_note": "Public execution by 82.26 pts: Maye's Way posted 108.64 and had to sit there while Joe Burrow (33.2) ran up the score for CeeDee's Nutz."
         },
         {
           "matchup_id": 4,
@@ -12433,7 +12901,7 @@
           "margin": 46.68,
           "combined": 310.32,
           "upset_delta": -1,
-          "triage_note": "Patrick Mahomes (35.4) paced Bijan Mustard past Underdog vikings by 46.68 pts, erasing Jahmyr Gibbs's 40.7."
+          "triage_note": "Patrick Mahomes (35.4) paced Bijan Mustard past Underdog vikings by 46.68 pts, completely wasting Jahmyr Gibbs (40.7) for Underdog vikings."
         },
         {
           "matchup_id": 5,
@@ -12548,7 +13016,7 @@
           "margin": 33.44,
           "combined": 269.24,
           "upset_delta": 7,
-          "triage_note": "Ja'Marr Chase (28.6) paced AHHHLLL past Justin the Nix of time by 33.44 pts."
+          "triage_note": "Clinical beatdown: AHHHLLL blasted Justin the Nix of time by 33.44 pts behind Ja'Marr Chase (28.6)."
         },
         {
           "matchup_id": 2,
@@ -12663,7 +13131,7 @@
           "margin": 30.68,
           "combined": 208.4,
           "upset_delta": -4,
-          "triage_note": "Ugly survival: Glock Purdy & Mac-10 won by 30.68 despite scoring 14.37 below the league average."
+          "triage_note": "Shameless schedule luck: Glock Purdy & Mac-10 scored 14.37 BELOW league average and still stole a 30.68-point W from Dislocated Dreams."
         },
         {
           "matchup_id": 1,
@@ -12778,7 +13246,7 @@
           "margin": 20.94,
           "combined": 201.46,
           "upset_delta": 2,
-          "triage_note": "Ugly survival: BTFU won by 20.94 despite scoring 22.71 below the league average."
+          "triage_note": "Fraud-watch victory: BTFU limped to 111.20 and got bailed out by Eliquis Hurts's 90.26 no-show."
         }
       ],
       "scoring_bars": [
@@ -12907,6 +13375,7 @@
           "pa": 1164.1,
           "all_play": "82-28",
           "all_play_pct": 74.55,
+          "luck_delta": -4.55,
           "rank": 1
         },
         {
@@ -12924,6 +13393,7 @@
           "pa": 1154.56,
           "all_play": "69-41",
           "all_play_pct": 62.73,
+          "luck_delta": 7.27,
           "rank": 2
         },
         {
@@ -12941,6 +13411,7 @@
           "pa": 1289.16,
           "all_play": "74-36",
           "all_play_pct": 67.27,
+          "luck_delta": 2.73,
           "rank": 3
         },
         {
@@ -12958,6 +13429,7 @@
           "pa": 1295.02,
           "all_play": "66-44",
           "all_play_pct": 60.0,
+          "luck_delta": 10.0,
           "rank": 4
         },
         {
@@ -12975,6 +13447,7 @@
           "pa": 1342.5,
           "all_play": "79-31",
           "all_play_pct": 71.82,
+          "luck_delta": -11.82,
           "rank": 5
         },
         {
@@ -12992,6 +13465,7 @@
           "pa": 1226.34,
           "all_play": "62-48",
           "all_play_pct": 56.36,
+          "luck_delta": 3.64,
           "rank": 6
         },
         {
@@ -13009,6 +13483,7 @@
           "pa": 1305.16,
           "all_play": "69-41",
           "all_play_pct": 62.73,
+          "luck_delta": -12.73,
           "rank": 7
         },
         {
@@ -13026,6 +13501,7 @@
           "pa": 1263.36,
           "all_play": "55-55",
           "all_play_pct": 50.0,
+          "luck_delta": 0.0,
           "rank": 8
         },
         {
@@ -13043,6 +13519,7 @@
           "pa": 1237.22,
           "all_play": "29-81",
           "all_play_pct": 26.36,
+          "luck_delta": 13.64,
           "rank": 9
         },
         {
@@ -13060,6 +13537,7 @@
           "pa": 1329.6,
           "all_play": "27-83",
           "all_play_pct": 24.55,
+          "luck_delta": -4.55,
           "rank": 10
         },
         {
@@ -13077,6 +13555,7 @@
           "pa": 1331.34,
           "all_play": "23-87",
           "all_play_pct": 20.91,
+          "luck_delta": -0.91,
           "rank": 11
         },
         {
@@ -13094,6 +13573,7 @@
           "pa": 1369.82,
           "all_play": "25-85",
           "all_play_pct": 22.73,
+          "luck_delta": -2.73,
           "rank": 12
         }
       ],
@@ -13193,19 +13673,37 @@
       "dispatch_date": "Nov 24, 2026",
       "theme": {
         "id": "thanksgiving",
+        "motif": "wheat",
         "holiday": "Thanksgiving",
         "edition": "Thanksgiving Carving",
         "accent": "#D9822B",
         "accent_soft": "rgba(217, 130, 43, 0.16)",
-        "tagline": "Carving knives out before the turkey hits the table \u2014 the playoff moat is set."
+        "tagline": "Carving knives out before the turkey even thaws \u2014 contenders eat, pretenders get relegated to the kids' table."
       },
       "headline": "Tier 1 Trauma: Thanksgiving Carving",
-      "deck": "Malone Wilson Flynn & Co carved up AHHHLLL for 177.18 points to pace Week 11, while BTFU survived a 109.80\u2013107.48 nail-biter over Hebrew Hammer in Tier 1 Dynasty.",
-      "ward_headline": "Malone Wilson Flynn & Co Leads the Ward as Playoff Lines Sharpen",
+      "deck": "Malone Wilson Flynn & Co carved up AHHHLLL for 177.18 points while Maye's Way flatlined at 58.12, and BTFU robbed Hebrew Hammer by 2.32 in Tier 1 Dynasty.",
+      "chat_blurb": "\ud83d\udea8 TIER 1 TRAUMA \u2014 WEEK 11: THANKSGIVING CARVING \ud83d\udea8\n\ud83d\udd25 Head of the Table: Malone Wilson Flynn & Co (177.18 pts)\n\ud83d\udc80 Cold Leftovers: Maye's Way (58.12 pts)\n\ud83d\udd2a Turkey Steal: BTFU over Hebrew Hammer by 2.32\n\ud83e\ude91 Burned in the Oven: Eliquis Hurts benched Ted Hurst III (20.1)\n\ud83d\udcca Full triage, fraud watch & next week's slate: https://blakehenderson45-svg.github.io/tier1-trauma/?week=11",
+      "ward_headline": "Malone Wilson Flynn & Co Runs the Ward While Eliquis Hurts Holds the Morgue Key",
       "ward_paragraphs": [
-        "Coming out of Week 11 (Thanksgiving), Malone Wilson Flynn & Co (8-3, W3) and Justin the Nix of time (8-3, W1) sit atop the Tier 1 standings. At the cutoff, Glock Purdy & Mac-10 (7-4) holds the #6 seed \u2014 two full games (2W) clear of the #7 bubble with 3 regular-season weeks remaining before the Week 15 bracket.",
-        "Six teams cleared the 108.64 median while Maye's Way hit the week's floor at 58.12. Individual fireworks were headlined by Dak Prescott (35.9 pts for Malone Wilson Flynn & Co) and Jonah Coleman (32.9 pts for Malone Wilson Flynn & Co)."
+        "Out of Week 11 (Thanksgiving), Malone Wilson Flynn & Co (8-3, W3) and Justin the Nix of time (8-3, W1) own the top of the ward. At the cutoff, Glock Purdy & Mac-10 (7-4) sits #6 \u2014 two full games (2W) clear of the #7 bubble with 3 regular-season weeks left before Week 15 playoffs.",
+        "Six teams cleared the 108.64 median while Maye's Way dragged the league floor down to 58.12 and Eliquis Hurts (2-9) anchored 12th place. Weekly MVP fireworks belonged to Dak Prescott (35.9 pts for Malone Wilson Flynn & Co) and Jonah Coleman (32.9 pts for Malone Wilson Flynn & Co)."
       ],
+      "fraud_watch": {
+        "fraud": {
+          "team_name": "Maye's Way",
+          "record": "4-7",
+          "all_play": "29-92",
+          "luck_delta": 12.39,
+          "roast": "Maye's Way (4-7) is riding +12.4% schedule luck over their 29-92 All-Play record. Paper tiger alert."
+        },
+        "victim": {
+          "team_name": "Underdog vikings",
+          "record": "5-6",
+          "all_play": "76-45",
+          "luck_delta": -17.36,
+          "roast": "Underdog vikings (5-6) owns a 76-45 All-Play mark (-17.4% luck) \u2014 the schedule gods chose violence."
+        }
+      },
       "stats": {
         "high_score": 177.18,
         "high_team": "Malone Wilson Flynn & Co",
@@ -13279,35 +13777,35 @@
           "title": "Head of the Table",
           "team": "Malone Wilson Flynn & Co",
           "stat": "177.18 pts",
-          "detail": "+67.83 above league average (109.35)."
+          "detail": "Lapped the field by +67.83 over the 109.35 league average."
         },
         {
           "key": "low",
-          "title": "Stuffed & Cold",
+          "title": "Cold Leftovers",
           "team": "Maye's Way",
           "stat": "58.12 pts",
-          "detail": "51.23 pts below the Week 11 mean."
+          "detail": "Cratered 51.23 pts below the Week 11 mean. Check for a pulse."
         },
         {
           "key": "close",
           "title": "Turkey Steal",
           "team": "BTFU",
           "stat": "+2.32 pts",
-          "detail": "Edged Hebrew Hammer (109.80\u2013107.48)."
+          "detail": "Robbed Hebrew Hammer (109.80\u2013107.48)."
         },
         {
           "key": "shootout",
           "title": "Shootout of the Week",
           "team": "Glock Purdy & Mac-10 vs Bijan Mustard",
           "stat": "297.88 pts",
-          "detail": "Glock Purdy & Mac-10 took the firefight 152.94\u2013144.94."
+          "detail": "Glock Purdy & Mac-10 survived the track meet 152.94\u2013144.94."
         },
         {
           "key": "bench",
-          "title": "Left in the Oven",
+          "title": "Burned in the Oven",
           "team": "Eliquis Hurts",
           "stat": "20.1 pts",
-          "detail": "Left Ted Hurst III (WR) on the bench in a loss."
+          "detail": "Left Ted Hurst III (WR) rotting on the pine in an L."
         }
       ],
       "matchups": [
@@ -13424,7 +13922,7 @@
           "margin": 101.28,
           "combined": 253.08,
           "upset_delta": -6,
-          "triage_note": "Code Blue blowout by 101.28 pts: Dak Prescott (35.9) led Malone Wilson Flynn & Co as they carved up AHHHLLL."
+          "triage_note": "Public execution by 101.28 pts: AHHHLLL posted 75.90 and had to sit there while Dak Prescott (35.9) ran up the score for Malone Wilson Flynn & Co."
         },
         {
           "matchup_id": 3,
@@ -13539,7 +14037,7 @@
           "margin": 8.0,
           "combined": 297.88,
           "upset_delta": 3,
-          "triage_note": "Shootout of the week (297.88 combined): Ashton Jeanty (25.4) helped Glock Purdy & Mac-10 outgun Chuba Hubbard (26.0) by 8.00 pts."
+          "triage_note": "Absolute firefight (297.88 combined): Glock Purdy & Mac-10 outgunned Bijan Mustard by 8.00 \u2014 Bijan Mustard scored 144.94 and STILL ate an L."
         },
         {
           "matchup_id": 5,
@@ -13654,7 +14152,7 @@
           "margin": 6.02,
           "combined": 240.38,
           "upset_delta": -2,
-          "triage_note": "Razor-thin escape by 6.02 pts: CeeDee's Nutz snatched a win from Underdog vikings behind Travis Kelce's 25.4 pts."
+          "triage_note": "Daylight robbery by 6.02 pts: CeeDee's Nutz snatched a win from Underdog vikings behind Travis Kelce (25.4), leaving Underdog vikings staring at the stat-correction page."
         },
         {
           "matchup_id": 2,
@@ -13769,7 +14267,7 @@
           "margin": 2.32,
           "combined": 217.28,
           "upset_delta": 6,
-          "triage_note": "Razor-thin escape by 2.32 pts: BTFU snatched a win from Hebrew Hammer behind Justin Herbert's 22.4 pts."
+          "triage_note": "Heartbreak in the trauma ward: BTFU stole this one by 2.32 pts \u2014 Hebrew Hammer is going to lose sleep over every single start/sit."
         },
         {
           "matchup_id": 6,
@@ -13884,7 +14382,7 @@
           "margin": 35.18,
           "combined": 151.42,
           "upset_delta": -8,
-          "triage_note": "Ugly survival: Justin the Nix of time won by 35.18 despite scoring 16.05 below the league average."
+          "triage_note": "Medical malpractice on both sidelines: Justin the Nix of time staggered to 93.30 while Maye's Way couldn't even crack 75 (58.12)."
         },
         {
           "matchup_id": 1,
@@ -13999,7 +14497,7 @@
           "margin": 16.7,
           "combined": 152.18,
           "upset_delta": 1,
-          "triage_note": "Bench malpractice watch: Eliquis Hurts left Ted Hurst III (20.1 pts) on the pine as Dislocated Dreams took it by 16.70."
+          "triage_note": "Cripple fight of the week: Dislocated Dreams won with a hideous 84.44 only because Eliquis Hurts flatlined at 67.74. Nobody deserved a W here."
         }
       ],
       "scoring_bars": [
@@ -14128,6 +14626,7 @@
           "pa": 1230.46,
           "all_play": "80-41",
           "all_play_pct": 66.12,
+          "luck_delta": 6.61,
           "rank": 1
         },
         {
@@ -14145,6 +14644,7 @@
           "pa": 1222.22,
           "all_play": "86-35",
           "all_play_pct": 71.07,
+          "luck_delta": 1.66,
           "rank": 2
         },
         {
@@ -14162,6 +14662,7 @@
           "pa": 1442.1,
           "all_play": "83-38",
           "all_play_pct": 68.6,
+          "luck_delta": -4.96,
           "rank": 3
         },
         {
@@ -14179,6 +14680,7 @@
           "pa": 1459.68,
           "all_play": "87-34",
           "all_play_pct": 71.9,
+          "luck_delta": -8.26,
           "rank": 4
         },
         {
@@ -14196,6 +14698,7 @@
           "pa": 1404.82,
           "all_play": "71-50",
           "all_play_pct": 58.68,
+          "luck_delta": 4.96,
           "rank": 5
         },
         {
@@ -14213,6 +14716,7 @@
           "pa": 1371.28,
           "all_play": "72-49",
           "all_play_pct": 59.5,
+          "luck_delta": 4.14,
           "rank": 6
         },
         {
@@ -14230,6 +14734,7 @@
           "pa": 1428.36,
           "all_play": "76-45",
           "all_play_pct": 62.81,
+          "luck_delta": -17.36,
           "rank": 7
         },
         {
@@ -14247,6 +14752,7 @@
           "pa": 1440.54,
           "all_play": "57-64",
           "all_play_pct": 47.11,
+          "luck_delta": -1.66,
           "rank": 8
         },
         {
@@ -14264,6 +14770,7 @@
           "pa": 1330.52,
           "all_play": "29-92",
           "all_play_pct": 23.97,
+          "luck_delta": 12.39,
           "rank": 9
         },
         {
@@ -14281,6 +14788,7 @@
           "pa": 1437.08,
           "all_play": "33-88",
           "all_play_pct": 27.27,
+          "luck_delta": 0.0,
           "rank": 10
         },
         {
@@ -14298,6 +14806,7 @@
           "pa": 1437.56,
           "all_play": "28-93",
           "all_play_pct": 23.14,
+          "luck_delta": 4.13,
           "rank": 11
         },
         {
@@ -14315,6 +14824,7 @@
           "pa": 1415.78,
           "all_play": "24-97",
           "all_play_pct": 19.83,
+          "luck_delta": -1.65,
           "rank": 12
         }
       ],

@@ -216,6 +216,45 @@ select {
   font-weight: 600;
 }
 
+.copy-blurb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  background: var(--crimson);
+  border: 1px solid var(--crimson);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.copy-blurb-btn:hover {
+  background: #f04440;
+}
+
+.copy-blurb-btn:active {
+  transform: scale(0.98);
+}
+
+.copy-blurb-btn.copied {
+  background: #1f8f54;
+  border-color: #1f8f54;
+}
+
+.holiday-motif-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+
 /* ---------- Hero Editorial Masthead ---------- */
 .hero {
   padding: 28px 0 36px;
@@ -1055,6 +1094,145 @@ select {
   display: block;
 }
 
+/* ---------- Fraud Watch & Schedule Victim Strip ---------- */
+.fraud-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.fraud-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--crimson);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+}
+
+.fraud-card.victim {
+  border-left-color: var(--holiday-accent);
+}
+
+.fraud-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.69rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--crimson);
+  margin-bottom: 5px;
+}
+
+.fraud-card.victim .fraud-kicker {
+  color: var(--holiday-accent);
+}
+
+.fraud-text {
+  margin: 0;
+  font-size: 0.86rem;
+  color: #cdd5e0;
+  line-height: 1.45;
+}
+
+/* ---------- Upcoming Triage Slate (Next Week Preview) ---------- */
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.preview-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.preview-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.stake-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+}
+
+.stake-tag.clash {
+  background: var(--crimson-soft);
+  color: #ff6b68;
+}
+
+.stake-tag.bubble {
+  background: var(--holiday-accent-soft);
+  color: var(--holiday-accent);
+}
+
+.preview-fav {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.preview-matchup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.preview-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.preview-team-left {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.preview-team-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.preview-team-avg {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.preview-blurb {
+  margin: 2px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--border-subtle);
@@ -1101,7 +1279,9 @@ select {
   .pulse-detail {
     grid-template-columns: 1fr;
   }
-  .matchups-grid {
+  .matchups-grid,
+  .fraud-strip,
+  .preview-grid {
     grid-template-columns: 1fr;
   }
 }
